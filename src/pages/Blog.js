@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Post from '../components/Post';
+import Footer from '../components/Footer';
 
 //styling
 import '../scss/pages/_blog.scss';
@@ -40,6 +41,7 @@ function Blog() {
 					alt='Placeholder for images'
 				/>
 			</div>
+			<Footer />
 		</div>
 	);
 }

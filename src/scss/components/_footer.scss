@@ -1,0 +1,31 @@
+@use '../assets' as a;
+
+footer {
+	background-color: a.$grey;
+	display: flex;
+	flex-wrap: wrap;
+
+	.main-footer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.footer-one {
+			text-align: left;
+		}
+
+		.footer-two {
+			.logo img {
+				height: 6rem;
+			}
+		}
+
+		.footer-three {
+			text-align: right;
+		}
+	}
+
+	.secondary-footer {
+		width: 100%;
+	}
+}
