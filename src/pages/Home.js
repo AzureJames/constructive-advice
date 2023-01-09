@@ -11,8 +11,17 @@ function Home() {
 		<div className='home'>
 			<Navbar />
 			<h1>Home Page</h1>
-			<DevBanner></DevBanner>
-			<Card></Card>
+			<DevBanner
+			title='title'
+			tagline='tagline'
+			></DevBanner>
+			<Card
+			index='text'
+			title='text'
+			body='text'
+			body2='text'
+			pic='./components/assets/placeholder.jpg'
+			></Card>
 		</div>
 	);
 }

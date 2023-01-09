@@ -1,7 +1,7 @@
 import '../scss/components/_banner.scss';
-import img from './assets/imgs/placeholder.jpg';
+import img from './assets/placeholder.jpg';
 
-export default function DevBanner({title, tagline, svgColor}) {
+export default function DevBanner({title, tagline, image, svgColor}) {
   return (
     <>
         <div className='devbanner'>
