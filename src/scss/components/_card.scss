@@ -1,5 +1,95 @@
-@use '../assets/' as a;
+@use '../assets' as a;
 
-.cards {
-	background-color: a.$light-blue;
+
+.card {
+    /* width: calc(100% - 1rem); */
+    min-width: 210px;
+    width: calc(100vw - 2rem);
+    margin-inline: .5rem;
+    margin-bottom: 2.5rem;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 32px;
+    background: #131314;
+    box-shadow:  15px 15px 13px #09090a,
+             -15px -15px 13px #1d1d1e;
+}
+
+.card p {
+    color: #9b9b9b;
+}
+
+.arrowd {
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: '1px solid gray';
+    border-radius: '100%';
+    text-align: 'center';
+    padding: '.5rem';
+    width: "20%";
+    margin: '0 auto';
+}
+
+body .arrowd:hover {
+        cursor: 'pointer';
+        background-color: 'gray';
+        padding: '20rem';
+}
+
+@media screen and (min-width: 768px) {
+    .cardcontainer {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 0 0 30%;
+    }
+}
+
+
+.cardtop {
+    background: rgb(22, 38, 44);
+    border-radius: 1px;
+    margin-top: 1.7rem;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+}
+
+.cardtop h2 {
+    color: lightblue;
+}
+
+.card img {
+    display: block;
+    border-radius: 100%;
+    margin: 2rem auto;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+.card li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.card li span {
+    font-weight: bold;
+}
+
+.card p {
+    margin-left: 0;
+}
+
+.cardbody {
+    padding: 1rem;
+}
+
+.card img {
+    margin: auto;
 }
