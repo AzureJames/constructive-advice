@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../scss/components/_navbar.scss';
 
 //logo
-import Logo from '../assets/imgs/logo/logo.png';
+import Logo from '../components/assets/imgs/logo/logo.png';
 
 function Navbar(props) {
 	const [click, setClick] = useState(false);
