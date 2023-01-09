@@ -23,7 +23,9 @@ function Home() {
 			body2='text'
 			pic='./components/assets/placeholder.jpg'
 			></Card>
+		<Footer />
 		</div>
+
 	);
 }
 
