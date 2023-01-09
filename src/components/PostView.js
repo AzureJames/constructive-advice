@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 
 import '../scss/components/_postView.scss';
+import Footer from './Footer';
 
 function PostView() {
 	//This is probably not the best way to do it, but it's the only way I've figured out so far. This would require us to know exactly the # of posts/pieces that need to have an individual page (just like in php when we do blahblah.ca/blog/postID).
@@ -40,9 +41,11 @@ function PostView() {
 
 	return (
 		<div className='post-view'>
+			<Navbar />
 			<div className={showPost1View ? 'content show' : 'hide'}></div>
 			<div className={showPost2View ? 'content show' : 'hide'}></div>
 			<div className={showPost3View ? 'content show' : 'hide'}></div>
+			<Footer />
 		</div>
 	);
 }

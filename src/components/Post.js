@@ -13,7 +13,7 @@ const Post = (props) => {
 			<p className='post-summary'>{props.summary}</p>
 
 			<a
-				href={`post/${props.url}`}
+				href={`blog/${props.url}`}
 				className='btn'
 				aria-label='View Post Button'
 			>
