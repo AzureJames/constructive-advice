@@ -27,7 +27,7 @@ export default function Card({index, title, body, body2, pic}) {
        setArrowContent("↑");
     }
   return (
-    <div className='card' key={index} onClick={ () => {if(activeCard == ""){randomBio();} else {setActiveCard("");setArrowContent("⬇");}} }> 
+    <div className='card' key={index} onClick={ () => {if(activeCard === ""){randomBio();} else {setActiveCard("");setArrowContent("⬇");}} }> 
         <div className='cardtop'>
             <h2 className='h2two'>{title}</h2>
         </div>

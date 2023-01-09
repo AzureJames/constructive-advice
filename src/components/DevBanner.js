@@ -6,7 +6,7 @@ export default function DevBanner({title, tagline, image, svgColor}) {
     <>
         <div className='devbanner'>
             <h1 className='title'>{title}</h1>
-              <img src={img} width='100' height='100'/>
+              <img src={img} width='100' height='100' alt="test"/>
             <p className='description'>{tagline}</p>
         </div>
     </>
