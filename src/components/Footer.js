@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../scss/components/_footer.scss';
 
 //IMGS
-import Logo from '../assets/imgs/logo/logo.png';
+import Logo from '../components/assets/logo.png';
 
 const Footer = () => {
 	return (

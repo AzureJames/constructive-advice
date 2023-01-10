@@ -3,7 +3,7 @@ import '../scss/components/_card.scss';
 import { useState } from 'react';
 
 
-export default function Card({index, title, body, city, state, country, pic, phone, email, uuid}) {
+export default function Card({index, title, body, body2, pic}) {
     const arrow = {
         color: 'whitesmoke',
         textAlign: 'center',
@@ -27,25 +27,20 @@ export default function Card({index, title, body, city, state, country, pic, pho
        setArrowContent("↑");
     }
   return (
-    <div className='card' key={index} onClick={ () => {if(activeCard == ""){randomBio();} else {setActiveCard("");setArrowContent("⬇");}} }> 
+    <div className='card' key={index} onClick={ () => {if(activeCard === ""){randomBio();} else {setActiveCard("");setArrowContent("⬇");}} }> 
         <div className='cardtop'>
             <h2 className='h2two'>{title}</h2>
         </div>
         <div className='servicecard'>
             <img src={pic} alt="hello" width={128} height={128}/>
-            <a href={`profile/${index}`} uuid={uuid}>View Full Profile</a>
             <ul>
 	            <li>
-                    <p><span>{body}</span></p>
-                    <p><span>{city}, {state}</span></p>
-                    <p><span>{country}</span></p>
-                    <p><span>{phone}</span></p>
-                    <p><span>{email}</span></p>
+                    <p>{body}</p>
+                    <p>{body2}</p>
                     <div className='arrowd' >
                         <button type='button' style={arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</button> 
                     </div>
                     <p>{activeCard}</p>
-
                 </li>
             </ul>
         </div>

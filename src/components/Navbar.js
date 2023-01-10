@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../scss/components/_navbar.scss';
 
 //logo
-import Logo from '../components/assets/imgs/logo/logo.png';
+import Logo from '../components/assets/logo.png';
 
 function Navbar(props) {
 	const [click, setClick] = useState(false);
@@ -18,7 +18,7 @@ function Navbar(props) {
 			<nav className={`navbar ${props.className}`} role='navigation'>
 				<div className='logo'>
 					<a href='/'>
-						<img src={Logo} alt='Placeholder logo image'></img>
+						<img src={Logo} alt='Placeholder logo'></img>
 					</a>
 				</div>
 				<div>

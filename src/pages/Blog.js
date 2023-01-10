@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import '../scss/pages/_blog.scss';
 
 //imgs
-import Placeholder from '../components/assets/imgs/placeholder.jpg';
+import Placeholder from '../components/assets/placeholder.jpg';
 
 function Blog() {
 	return (
