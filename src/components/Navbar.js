@@ -34,6 +34,11 @@ function Navbar(props) {
 							</Link>
 						</li>
 						<li className='nav-item'>
+							<Link to='/fullpostpage' onClick={closeMobileMenu}>
+								Full Post
+							</Link>
+						</li>
+						<li className='nav-item'>
 							<Link to='/about' onClick={closeMobileMenu}>
 								About Us
 							</Link>

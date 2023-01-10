@@ -7,7 +7,7 @@
 	// font-family: a.$Poppins;
 	font-size: 1.8rem;
 	margin: 0 auto;
-	background-color: a.$grey;
+	background-color: a.$off-white;
 
 	.logo img {
 		height: 8rem;
@@ -36,7 +36,7 @@
 		border-radius: 0.6rem;
 		transform-origin: 0 0;
 		transition: 0.4s;
-		background-color: a.$almost-black;
+		background-color: a.$off-black;
 	}
 
 	.hamburger.is-active span:nth-child(1) {
@@ -61,7 +61,7 @@
 		z-index: 2;
 		padding-top: 6rem;
 		transition: 1s;
-		background-color: a.$pink;
+		background-color: a.$primary;
 	}
 
 	.nav-item a {
