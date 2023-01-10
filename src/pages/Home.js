@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import DevBanner from '../components/DevBanner';
 
+
 //STYLING
 import '../scss/pages/_home.scss';
 
@@ -16,13 +17,29 @@ function Home() {
 			title='title'
 			tagline='tagline'
 			></DevBanner>
-			<Card
-			index='text'
-			title='text'
-			body='text'
-			body2='text'
-			pic='./components/assets/placeholder.jpg'
-			></Card>
+			<div className='flex1200'>  
+				<Card
+				index='text'
+				title='text'
+				body='text'
+				body2='text'
+				pic='./components/assets/placeholder.jpg'
+				></Card>
+				<Card
+				index='text'
+				title='text'
+				body='text'
+				body2='text'
+				pic='./components/assets/placeholder.jpg'
+				></Card>
+				<Card
+				index='text'
+				title='text'
+				body='text'
+				body2='text'
+				pic='./components/assets/placeholder.jpg'
+				></Card>
+			</div>
 		<Footer />
 		</div>
 
