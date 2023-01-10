@@ -7,7 +7,7 @@ import FullPost from '../components/FullPost';
 import '../scss/pages/_fullPostPage.scss';
 
 //imgs
-import Placeholder from '../components/assets/imgs/placeholder.jpg';
+import Placeholder from '../components/assets/placeholder.jpg';
 
 function FullPostPage() {
 	return (
