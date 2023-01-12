@@ -27,6 +27,16 @@ const Footer = () => {
 								<a href='mailto:example@email.com'>example@email.com</a>
 							</p>
 						</div>
+						<ul>
+							<li className='nav-item'>
+								<Link to='/' className='nav-links'>
+									Home
+								</Link>
+							</li>
+							<li className='nav-item'>
+								<Link to='/contact'>Contact Us</Link>
+							</li>
+						</ul>
 					</div>
 					<div className='footer-two'>
 						<div className='logo'>
@@ -36,24 +46,8 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='footer-three'>
-						<ul>
-							<li className='nav-item'>
-								<Link to='/' className='nav-links'>
-									Home
-								</Link>
-							</li>
-							<li className='nav-item'>
-								<Link to='/blog' className='nav-links'>
-									Blog
-								</Link>
-							</li>
-							<li className='nav-item'>
-								<Link to='/about'>About Us</Link>
-							</li>
-							<li className='nav-item'>
-								<Link to='/contact'>Contact Us</Link>
-							</li>
-						</ul>
+						<h3>Disclaimer</h3>
+						<p>disclaimer</p>
 					</div>
 				</div>
 
