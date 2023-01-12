@@ -9,21 +9,21 @@
 
 // $Archivo: 'Archivo Black', sans-serif;
 // $Julius: 'Julius Sans One', sans-serif;
-h1, h2 {
+body h1, h2 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
 
     line-height: 75px;
 }
-h1 {
+body h1 {
     font-size: 64px;
 }
-h2 {
+body h2 {
     font-size: 48px;
 }
 
-p {
+body p, body label, body input, body a, body h3 {
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 1.6;

@@ -1,7 +1,7 @@
 @use '../assets' as a;
 
 .home {
-	background-color: white;
+	background-color: a.$primary;
 }
 
 .container {

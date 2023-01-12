@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
 
 import '../scss/components/_form.scss';
+import '../scss/components/_button.scss';
 
 // A custom validation function. This must return an object which keys are symmetrical to our values/initialValues
 const validate = (values) => {
@@ -104,8 +105,8 @@ const ContactForm = () => {
 						<div className='errors'>{formik.errors.message}</div>
 					) : null}
 				</div>
-				<div className='button'>
-					<input type='submit' value='Send Message' name='contact' />
+				<div>
+					<input className='btn btn--primary' type='submit' value='Send Message' name='contact' />
 				</div>
 				<p className='success'>
 					{success === true

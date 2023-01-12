@@ -6,19 +6,20 @@
 	outline: none;
 	border: none;
 	cursor: pointer;
+	max-width: min-content;
 }
 
 .btn--primary {
-	background-color: var(--primary);
-	color: #000;
-	border: 1px solid var(--primary);
+	background-color: a.$secondary;
+	background-color: a.$secondary;
+	color: a.$off-black;
 }
 
 .btn--outline {
 	background-color: transparent;
 	color: #fff;
 	padding: 0.8rem 2rem;
-	border: 1px solid var(--primary);
+	border: 1px solid a.$primary;
 	transition: all 0.3s ease-out;
 }
 
@@ -33,5 +34,5 @@
 }
 
 .btn--primary:hover {
-	background-color: $secondary-hover;
+	background-color: a.$secondary-hover;
 }
