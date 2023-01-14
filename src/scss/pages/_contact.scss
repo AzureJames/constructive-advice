@@ -3,3 +3,8 @@
 .contact {
 	background-color: a.$primary;
 }
+
+.contact input,
+.contact textarea {
+	border-radius: 8px;
+}

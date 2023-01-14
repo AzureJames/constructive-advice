@@ -1,5 +1,11 @@
 @use '../assets' as a;
 
+body .btn-container {
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+}
+
 .btn {
 	padding: 0.8rem 2rem;
 	border-radius: 8px;

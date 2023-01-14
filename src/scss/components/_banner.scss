@@ -2,15 +2,15 @@
 
 .title,
 .description {
-    color: #808080;
+    color: a.$off-black;
 }
 
 .devbanner {
     padding: 3rem;
     border-radius: 58px;
-    background: #131314;
-    box-shadow: inset 20px 20px 14px #080808,
-            inset -20px -20px 14px #1e1e20;
+    background: a.$off-white;
+    box-shadow: inset 20px 20px 14px a.$gray,
+            inset -20px -20px 14px a.$gray;
     margin: 1rem 2rem 2rem 2rem;
     
 }
@@ -26,5 +26,5 @@
 }
 
 div > .devbanner {
-    color: whitesmoke;
+    color: a.$off-white;
 }

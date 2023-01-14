@@ -9,6 +9,10 @@
 	margin: 0 auto;
 	background-color: a.$off-white;
 
+	.logo {
+		align-self: flex-start;
+	}
+
 	.logo img {
 		height: 8rem;
 	}

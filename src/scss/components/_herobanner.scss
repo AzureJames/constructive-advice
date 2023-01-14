@@ -1,0 +1,29 @@
+@use '../assets' as a;
+
+.bg {
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2)
+		),
+		url('../../components/assets/placeholder.jpg');
+	padding-bottom: 6rem;
+	padding-top: 3rem;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+
+	.button {
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (min-width: 430px) {
+	.bg {
+		background-image: linear-gradient(
+				rgba(255, 255, 255, 0.2),
+				rgba(255, 255, 255, 0.2)
+			),
+			url('../../components/assets/placeholder.jpg');
+		background-size: cover;
+	}
+}

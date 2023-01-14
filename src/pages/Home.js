@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import DevBanner from '../components/DevBanner';
 import FullPost from '../components/FullPost';
+import CurvySection from '../components/CurvySection';
+import HeroBanner from '../components/HeroBanner';
 
 import Placeholder from '../components/assets/placeholder.jpg';
 //STYLING
@@ -13,7 +15,22 @@ function Home() {
 	return (
 		<div className='home'>
 			<Navbar />
-			<h1>Home Page</h1>
+
+			<div className='bg'>
+		    	<div>
+					<h1 className='rate-title'>rate title</h1>
+					<HeroBanner />
+			    </div>
+			</div>
+
+			<CurvySection
+			title="Icon"
+			tagline="Statistic text" >
+			</CurvySection>
+			<div className='inner-container'>
+				<h1 className='off-white'>Home Page</h1>
+				<p className='off-white'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
 			<DevBanner
@@ -74,7 +91,7 @@ function Home() {
 				pic='./components/assets/placeholder.jpg'
 				></Card>
 			</div>
-		<Footer />
+			<Footer />
 		</div>
 
 	);

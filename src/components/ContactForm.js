@@ -60,7 +60,7 @@ const ContactForm = () => {
 
 	return (
 		<div>
-			<form className='contact-form' onSubmit={formik.handleSubmit}>
+			<form className='contact-form inner-container' onSubmit={formik.handleSubmit}>
 				<div className='name'>
 					<label className='nameLabel' for='name'>
 						First & Last Name
@@ -105,7 +105,7 @@ const ContactForm = () => {
 						<div className='errors'>{formik.errors.message}</div>
 					) : null}
 				</div>
-				<div>
+				<div className='btn-container'>
 					<input className='btn btn--primary' type='submit' value='Send Message' name='contact' />
 				</div>
 				<p className='success'>

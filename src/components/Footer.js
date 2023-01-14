@@ -11,12 +11,12 @@ const Footer = () => {
 	return (
 		<>
 			<footer>
-				<div className='main-footer'>
+				<div className='main-footer inner-container'>
 					<div className='footer-one'>
 						<div>
 							<h3>Our Location</h3>
 							<p>Potato Farm</p>
-							<p>P0T AT0</p>
+							<p>Web design by <a href='azurejames.com'>Azure James</a></p>
 						</div>
 						<div>
 							<h3>Contact Us</h3>
@@ -37,11 +37,9 @@ const Footer = () => {
 								<Link to='/contact'>Contact Us</Link>
 							</li>
 						</ul>
-					</div>
-					<div className='footer-two'>
 						<div className='logo'>
 							<a href='/'>
-								<img src={Logo} alt='Placeholder logo' />
+								<img src={Logo} alt='Placeholder logo' height={50} width={50} />
 							</a>
 						</div>
 					</div>
@@ -51,9 +49,9 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className='secondary-footer'>
+				{/* <div className='secondary-footer'>
 					<p className='copyright'>©{new Date().getFullYear()} REACT-BASE</p>
-				</div>
+				</div> */}
 			</footer>
 		</>
 	);

@@ -1,8 +1,9 @@
 @use '../assets' as a;
 
 .contact-form {
-	background-color: a.$off-white;
+	// background-color: a.$off-white;
 	text-align: left;
+	padding: 2rem 0rem;
 
 	div:not(.errors) {
 		display: flex;
@@ -10,6 +11,7 @@
 		max-width: 60rem;
 		margin: 0 auto;
 		padding: 1rem 0;
+		color: a.$off-white;
 
 		div.errors {
 			color: rgb(218, 10, 10);
