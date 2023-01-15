@@ -7,4 +7,10 @@
 .contact input,
 .contact textarea {
 	border-radius: 8px;
+	padding: 5px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact textarea {
+	min-height: 29rem;
 }

@@ -12,13 +12,13 @@ const Post = (props) => {
 			<h1 className='post-title'>{props.title}</h1>
 			<p className='post-summary'>{props.summary}</p>
 
-			<a
+			{/* <a
 				href={`blog/${props.url}`}
 				className='btn'
 				aria-label='View Post Button'
 			>
 				View Post <BsArrowRight />
-			</a>
+			</a> */}
 		</div>
 	);
 };

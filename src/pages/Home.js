@@ -29,7 +29,7 @@ function Home() {
 			</CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>Home Page</h1>
-				<p className='off-white'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+				<p className='off-white m-w65'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
@@ -62,7 +62,7 @@ function Home() {
 			</div>
 			<FullPost
 				url='URL for the post'
-				type='Post type goes here'
+				type=''
 				title='Title of the post goes here'
 				summary='A quick summary of the post, or a longer one if you want. You dont need to go to a new page to read more.'
 				src={Placeholder}

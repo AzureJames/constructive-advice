@@ -11,13 +11,13 @@ const FullPost = (props) => {
 				<h1 className='post-title'>{props.title}</h1>
 				<p className='post-summary'>{props.summary}</p>
 
-				<a
+				{/* <a
 					href={`post/${props.url}`}
 					className='btn'
 					aria-label='View Post Button'
 				>
 					View post <BsArrowRight />
-				</a>
+				</a> */}
 			</div>
 			<div className='post-img'>
 				<img src={props.src} alt={props.alt} />
