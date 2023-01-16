@@ -1,0 +1,98 @@
+@use '../assets' as a;
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.bannercard {
+    /* width: calc(100% - 1rem); */
+    min-width: 210px;
+    width: calc(100vw - 2rem);
+    margin-inline: .5rem;
+    margin-bottom: 2.5rem;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 6px 4px 11px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    background: rgba(240, 240, 240, 0.5);  
+}
+
+.bannercard p {
+    color: a.$off-black;
+}
+
+.arrowd {
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: '1px solid gray';
+    border-radius: '100%';
+    text-align: 'center';
+    padding: '.5rem';
+    width: "20%";
+    margin: '0 auto';
+}
+
+body .arrowd:hover {
+        cursor: 'pointer';
+        background-color: 'gray';
+        padding: '20rem';
+}
+
+@media screen and (min-width: 768px) {
+    .bannercardcontainer {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .bannercard {
+        flex: 0 0 30%;
+    }
+}
+
+
+.bannercardtop {
+    background: rgba(240, 240, 240, 0.5);  
+    border-radius: 1px;
+    margin-top: 1.7rem;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+}
+
+.bannercardtop h2 {
+    color: a.$off-black;
+}
+
+.bannercard img {
+    display: block;
+    border-radius: 100%;
+    margin: 2rem auto;
+}
+
+.bannercard ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.bannercard li {
+    margin-bottom: 1rem;
+}
+
+.bannercard li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.bannercard li span {
+    font-weight: bold;
+}
+
+.bannercard p {
+    margin-left: 0;
+}
+
+.bannercardbody {
+    padding: 1rem;
+}
+
+.bannercard img {
+    margin: auto;
+}

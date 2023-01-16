@@ -13,7 +13,7 @@ const HeroBanner = () => {
                 <p className='price'>price</p>
             </div>
 
-			<div className=' extra'>
+			<div className='extra'>
 				<p>Please Note:</p>
 				<p className='ex-p'>
 					All prices will include an additional 5% GST, and an additional 3%

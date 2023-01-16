@@ -3,10 +3,13 @@
 footer {
 	background-color: a.$off-white;
 
+
 	.main-footer {
+		padding-top: 2rem;
+		padding-bottom: 6rem;
 		.footer-two {
 			.logo img {
-				height: 6rem;
+				height: 9rem;
 			}
 		}
 	}
@@ -22,13 +25,13 @@ footer {
 		.main-footer {
 			width: 100%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 
 			.footer-one {
 				text-align: left;
 			}
 
-			.footer-three {
+			.footer-two {
 				text-align: right;
 			}
 		}

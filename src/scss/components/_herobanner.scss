@@ -5,9 +5,9 @@
 			rgba(255, 255, 255, 0.2),
 			rgba(255, 255, 255, 0.2)
 		),
-		url('../../components/assets/placeholder.jpg');
-	padding-bottom: 6rem;
-	padding-top: 3rem;
+		url('../../img/desk.jpg');
+	padding-bottom: 9rem;
+	padding-top: 6rem;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
@@ -23,7 +23,36 @@
 				rgba(255, 255, 255, 0.2),
 				rgba(255, 255, 255, 0.2)
 			),
-			url('../../components/assets/placeholder.jpg');
+			url('../../img/desk.jpg');
+		background-size: cover;
+	}
+}
+
+
+.bg-contact {
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2)
+		),
+		url('../../img/field.jpg');
+	padding-bottom: 9rem;
+	padding-top: 6rem;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+
+	.button {
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (min-width: 430px) {
+	.bg-contact {
+		background-image: linear-gradient(
+				rgba(255, 255, 255, 0.2),
+				rgba(255, 255, 255, 0.2)
+			),
+			url('../../img/field.jpg');
 		background-size: cover;
 	}
 }
