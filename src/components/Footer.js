@@ -45,7 +45,7 @@ const Footer = () => {
 					</div>
 					<div className='footer-two'>
 						<h3>Disclaimer</h3>
-						<p>disclaimer</p>
+						<p>disclaimer here</p>
 					</div>
 				</div>
 

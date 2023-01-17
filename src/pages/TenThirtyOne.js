@@ -1,49 +1,35 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import Card from '../components/Card';
-import BannerCard from '../components/BannerCard';
-import DevBanner from '../components/DevBanner';
-import FullPost from '../components/FullPost';
-import CurvySection from '../components/CurvySection';
 import HeroBanner from '../components/HeroBanner';
-import Placeholder from '../img/forest-desktop.jpg'
-//STYLING
-import '../scss/pages/_home.scss';
+import BannerCard from '../components/BannerCard';
+import CurvySection from '../components/CurvySection';
+import Card from '../components/Card';
 
-function Home() {
+import '../scss/pages/_contact.scss';
+
+function Contact() {
 	return (
-		<div className='home'>
+		<div className='contact'>
 			<Navbar />
-
-			<div className='bg'>
-				<BannerCard
+			<div className='bg-contact'>
+		    	<BannerCard
 					index='text'
-					title='Constructive Advice'
-					body='Behind every successful business is a great idea and a great accountant!'
-					body2=''
+					title='1031s' 
+					body='We specialize in paperless 1031 exchanges!'
+					body2='info'
 				></BannerCard>
-		    	{/* <div>
-					<h1 className='rate-title'>rate title</h1>
-					<HeroBanner />
-			    </div> */}
 			</div>
-
-			<CurvySection
-			title="Icon"
-			tagline="Statistic text" >
+            <CurvySection
+			title="1031 Icon"
+			tagline="1031 Statistic text" >
 			</CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>What We Do</h1>
 				<p className='off-white m-w65'>At Constructive Advice, we specialize in providing professional and efficient accounting services for small businesses and self-employed individuals. As QuickBooks certified ProAdvisors, we are dedicated to helping you navigate the complexities of tax laws and regulations, so you can focus on running your business. With our expertise in QuickBooks, we can help you stay on top of your finances and make sure you are getting the most out of the software. Whether you need assistance setting up your books, preparing for tax season, or just need some guidance on how to use QuickBooks, we are here to help. Let us take the stress out of accounting and help you achieve financial success. </p>
 			</div>
-			{/* HERO BANNER FROM BLC??
-			CURVY BANNER */}
-			<DevBanner
-			title='Our Specialty'
-			tagline='text text text text text text text text'
-			></DevBanner>
-			<div className='flex1200'>  
+            <div className='flex1200'>  
 				<Card
 				index='text'
 				title='Service'
@@ -67,43 +53,9 @@ function Home() {
 				
 				></Card>
 			</div>
-			<FullPost
-				url='URL for the post'
-				type=''
-				title='Planting Trees'
-				summary='Without our environment, what would we have?
-				To help care for our planet, Constructive Advice will donate 25 dollars to Re-tree NY for every client 
-				signed onto Quickbooks Online!'
-				src={Placeholder}
-				alt='Alt for the image'
-			/>
-			<div className='flex1200'>  
-				<Card
-				index='text'
-				title='Pricing'
-				body='text text text text text text text text'
-				body2='text'
-				
-				></Card>
-				<Card
-				index='text'
-				title='Business'
-				body='text text text text text text text text'
-				body2='text'
-				
-				></Card>
-				<Card
-				index='text'
-				title='Personal'
-				body='text text text text text text text text'
-				body2='text'
-				
-				></Card>
-			</div>
 			<Footer />
 		</div>
-
 	);
 }
 
-export default Home;
+export default Contact;

@@ -3,7 +3,7 @@ import '../scss/components/_card.scss';
 import { useState } from 'react';
 
 
-export default function Card({index, title, body, body2, pic}) {
+export default function Card({index, title, body, body2}) {
     const arrow = {
         color: 'whitesmoke',
         textAlign: 'center',
@@ -32,7 +32,7 @@ export default function Card({index, title, body, body2, pic}) {
             <h2 className='h2two'>{title}</h2>
         </div>
         <div className='servicecard'>
-            <img src={pic} alt="hello" width={128} height={128}/>
+            {/* <img src={pic} alt="hello" width={128} height={128}/> */}
             <ul>
 	            <li>
                     <p>{body}</p>
