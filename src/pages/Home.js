@@ -40,8 +40,8 @@ function Home() {
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
 			<DevBanner
-			title='Our Specialty'
-			tagline='text text text text text text text text'
+			title='Our Mission: Planting Trees'
+			tagline='The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 for each new client.'
 			></DevBanner>
 			<div className='flex1200'>  
 				<Card
