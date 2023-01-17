@@ -113,11 +113,13 @@ const ContactForm = () => {
 				<div className='btn-container'>
 					<input className='btn btn--primary' type='submit' value='Send Message' name='contact' />
 				</div>
-				<p className='success'>
-					{success === true
-						? "Thanks for reaching out! I'll be in touch shortly."
-						: ''}
-				</p>
+				<div className='inner-container'>
+					<p className='success off-white'>
+						{success === true
+							? "Thanks for reaching out! I'll be in touch shortly."
+							: ''}
+					</p>
+				</div>
 			</form>
 		</div>
 	);
