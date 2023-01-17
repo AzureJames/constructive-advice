@@ -40,6 +40,11 @@ const ContactForm = () => {
 		},
 		validate,
 		onSubmit: (values, resetForm) => {
+			
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('BPcmC3BMlMhM_0Fck');
+        
+    
 			emailjs
 				.send(
 					process.env.REACT_APP_EMAILJS_SERVICE_ID,

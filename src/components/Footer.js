@@ -15,8 +15,7 @@ const Footer = () => {
 					<div className='footer-one'>
 						<div>
 							<h3>Our Location</h3>
-							<p>Potato Farm</p>
-							<p>Web design by <a href='azurejames.com'>Azure James</a></p>
+							<p>place</p>
 						</div>
 						<div>
 							<h3>Contact Us</h3>
@@ -24,8 +23,9 @@ const Footer = () => {
 								<a href='tel:1111111111'>1111111111</a>
 							</p>
 							<p>
-								<a href='mailto:example@email.com'>example@email.com</a>
+								<a href='mailto:ConstructiveAdvice1@gmail.com'>ConstructiveAdvice1@gmail.com</a>
 							</p>
+							<p>Web design by <a href='azurejames.com'>Azure James</a></p>
 						</div>
 						{/* <ul>
 							<li className='nav-item'>
