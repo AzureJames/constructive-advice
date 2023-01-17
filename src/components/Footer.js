@@ -18,7 +18,6 @@ const Footer = () => {
 							<p>place</p>
 						</div>
 						<div>
-							<h3>Contact Us</h3>
 							<p>
 								<a href='tel:1111111111'>1111111111</a>
 							</p>
