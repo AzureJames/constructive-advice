@@ -7,7 +7,7 @@ import BannerCard from '../components/BannerCard';
 import CurvySection from '../components/CurvySection';
 import Card from '../components/Card';
 
-import '../scss/pages/_contact.scss';
+import '../scss/pages/_tenthirtyone.scss';
 
 function Contact() {
 	return (
