@@ -69,11 +69,13 @@
 	}
 
 	.nav-item a {
+		color: a.$primary;
 		padding: 3rem;
 		display: block;
 	}
 
 	.nav-item a:hover {
+		color: a.$off-black; 
 	}
 
 	.active {

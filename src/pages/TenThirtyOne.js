@@ -26,8 +26,8 @@ function Contact() {
 			tagline="1031 Statistic text" >
 			</CurvySection>
 			<div className='inner-container'>
-				<h1 className='off-white'>What We Do</h1>
-				<p className='off-white m-w65'>At Constructive Advice, we specialize in providing professional and efficient accounting services for small businesses and self-employed individuals. As QuickBooks certified ProAdvisors, we are dedicated to helping you navigate the complexities of tax laws and regulations, so you can focus on running your business. With our expertise in QuickBooks, we can help you stay on top of your finances and make sure you are getting the most out of the software. Whether you need assistance setting up your books, preparing for tax season, or just need some guidance on how to use QuickBooks, we are here to help. Let us take the stress out of accounting and help you achieve financial success. </p>
+				<h1 className='off-white'>'Green' 1031s</h1>
+				<p className='off-white m-w65'>We do paperless 1031 exchanges! We will navigate the complexities of tax laws and regulations, to you defer taxes and maximize your investment returns. From identifying potential replacement properties, to ensuring compliance with the IRS guidelines, we’ll handle every step of the process while helping the environment.</p>
 			</div>
             <div className='flex1200'>  
 				<Card

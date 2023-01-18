@@ -35,13 +35,13 @@ function Home() {
 			</CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>What We Do</h1>
-				<p className='off-white m-w65'>At Constructive Advice, we specialize in providing professional and efficient accounting services for small businesses and self-employed individuals. As QuickBooks certified ProAdvisors, we are dedicated to helping you navigate the complexities of tax laws and regulations, so you can focus on running your business. With our expertise in QuickBooks, we can help you stay on top of your finances and make sure you are getting the most out of the software. Whether you need assistance setting up your books, preparing for tax season, or just need some guidance on how to use QuickBooks, we are here to help. Let us take the stress out of accounting and help you achieve financial success. </p>
+				<p className='off-white m-w65'>At Constructive Advice, we specialize in protecting the environment while providing professional accounting services for businesses and individuals. As QuickBooks certified ProAdvisors, we are dedicated to helping you navigate the tax laws and regulations, so you can focus on running your business.<br></br>Let us take the stress out of accounting and help you achieve financial success, the green way!</p>
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
 			<DevBanner
 			title='Our Mission: Planting Trees'
-			tagline='The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 for each new client.'
+			tagline='The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.'
 			></DevBanner>
 			<div className='flex1200'>  
 				<Card
@@ -59,13 +59,15 @@ function Home() {
 				body2='From identifying potential replacement properties, to ensuring compliance with the IRS guidelines, we’ll handle every step of the process.'
 				
 				></Card>
-				<Card
-				index='text'
-				title='Get in Touch'
-				body='Contact us today to schedule a consultation.'
-				body2=''
-				
-				></Card>
+				<a href='contact'>
+					<Card
+					index='text'
+					title='Get in Touch'
+					body='Click to contact us today and schedule a consultation.'
+					body2=''
+					
+					></Card>
+				</a>
 			</div>
 			<FullPost
 				url='URL for the post'
