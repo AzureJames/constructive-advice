@@ -15,8 +15,8 @@ function Contact() {
 		    	<BannerCard
 					index='text'
 					title='Contact' 
-					body='More information'
-					body2='info'
+					body='We would love to hear from you!'
+					body2='Send a message below.'
 				></BannerCard>
 			</div>
 			<ContactForm />
