@@ -13,7 +13,7 @@ function Contact() {
 	return (
 		<div className='contact'>
 			<Navbar />
-			<div className='bg-contact'>
+			<div className='bg-ten'>
 		    	<BannerCard
 					index='text'
 					title='1031s' 

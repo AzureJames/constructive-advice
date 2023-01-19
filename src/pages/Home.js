@@ -20,7 +20,7 @@ function Home() {
 				<BannerCard
 					index='text'
 					title='Constructive Advice'
-					body='Behind every successful business is a great idea and a great accountant!'
+					body='Behind every good business is a good idea.  Quickbooks has the software and I have the good idea.'
 					body2=''
 				></BannerCard>
 		    	{/* <div>
@@ -35,13 +35,13 @@ function Home() {
 			</CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>What We Do</h1>
-				<p className='off-white m-w65'>At Constructive Advice, we specialize in protecting the environment while providing professional accounting services for businesses and individuals. As QuickBooks certified ProAdvisors, we are dedicated to helping you navigate the tax laws and regulations, so you can focus on running your business.<br></br>Let us take the stress out of accounting and help you achieve financial success, the green way!</p>
+				<p className='off-white m-w65'>At Constructive Advice, we specialize in protecting the environment while providing professional accounting services for businesses and individuals. As QuickBooks ProAdvisor Program Members, we are dedicated to helping you navigate the tax laws and regulations, so you can focus on running your business.<br></br>Let us take the stress out of accounting and help you achieve financial success, the green way!</p>
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
 			<DevBanner
-			title='Our Mission: Planting Trees'
-			tagline='The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.'
+			title='Our Mission: Green Accounting and Bookkeeping'
+			tagline='We are committed to the greening of accounting and bookkeeping. Quickbooks Online provides the software and our Proadvisors will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
 			></DevBanner>
 			<div className='flex1200'>  
 				<Card
