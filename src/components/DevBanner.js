@@ -1,5 +1,5 @@
 import '../scss/components/_banner.scss';
-import img from '../img/dudes.jpg';
+import img from '../img/whiterose.jpg';
 
 export default function DevBanner({title, tagline, image, svgColor}) {
   return (
