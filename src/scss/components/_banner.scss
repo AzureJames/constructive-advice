@@ -2,29 +2,34 @@
 
 .title,
 .description {
-    color: a.$off-black;
+	color: a.$off-black;
 }
 
 .devbanner {
-    padding: 3rem;
-    border-radius: 58px;
-    background: a.$off-white;
-    box-shadow: inset 20px 20px 14px a.$gray,
-            inset -20px -20px 14px a.$gray;
-    margin: 1rem 2rem 2rem 2rem;
-    
+	padding: 3rem;
+	border-radius: 58px;
+	background: a.$off-white;
+	box-shadow: inset 20px 20px 14px a.$gray, inset -20px -20px 14px a.$gray;
+	margin: 1rem 1.6rem;
+	max-width: 140rem;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .devbanner {
-        margin: 3rem;
-    }
+	.devbanner {
+		margin: 3rem;
+	}
 }
 
 .devbanner {
-    text-align: center;
+	text-align: center;
+	margin: 8rem auto;
 }
 
 div > .devbanner {
-    color: a.$off-white;
+	color: a.$off-white;
 }

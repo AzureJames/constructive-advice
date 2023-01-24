@@ -9,8 +9,13 @@
 	border-radius: 8px;
 	padding: 5px;
 	font-family: 'Poppins', sans-serif;
+	border: none;
 }
 
 .contact textarea {
 	min-height: 29rem;
+}
+
+input[type='submit'] {
+	padding: 1rem;
 }

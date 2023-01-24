@@ -1,94 +1,92 @@
 @use '../assets' as a;
 
-
 .card {
-    /* width: calc(100% - 1rem); */
-    min-width: 210px;
-    width: calc(100vw - 2rem);
-    margin-inline: .5rem;
-    margin-bottom: 2.5rem;
-    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 6px 4px 11px rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
-    background-color: a.$off-white;
+	/* width: calc(100% - 1rem); */
+	min-width: 210px;
+	width: calc(100vw - 2rem);
+	margin-inline: 0.5rem;
+	margin-bottom: 2.5rem;
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	box-shadow: 6px 4px 11px rgba(0, 0, 0, 0.9);
+	border-radius: 20px;
+	background-color: a.$off-white;
 }
 
 .card p {
-    color: a.$off-black;
+	color: a.$off-black;
 }
 
 .arrowd {
-    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border: '1px solid gray';
-    border-radius: '100%';
-    text-align: 'center';
-    padding: '.5rem';
-    width: "20%";
-    margin: '0 auto';
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	border: '1px solid gray';
+	border-radius: '100%';
+	text-align: 'center';
+	padding: '.5rem';
+	width: '20%';
+	margin: '0 auto';
 }
 
 body .arrowd:hover {
-        cursor: 'pointer';
-        background-color: 'gray';
-        padding: '20rem';
+	cursor: 'pointer';
+	background-color: 'gray';
+	padding: '20rem';
 }
 
 @media screen and (min-width: 768px) {
-    .cardcontainer {
-        display: flex;
-        gap: 1rem;
-    }
+	.cardcontainer {
+		display: flex;
+		gap: 1rem;
+	}
 
-    .card {
-        flex: 0 0 30%;
-    }
+	.card {
+		flex: 0 0 30%;
+	}
 }
 
-
 .cardtop {
-    background: a.$off-white;
-    border-radius: 1px;
-    margin-top: 1.7rem;
-    padding-inline: 2rem;
-    padding-block: 0.2rem;
+	//background: a.$off-white;
+	border-radius: 1px;
+	// margin-top: 1.7rem;
+	// padding-inline: 2rem;
+	// padding-block: 0.2rem;
 }
 
 .cardtop h2 {
-    color: a.$off-black;
+	color: a.$off-black;
 }
 
 .card img {
-    display: block;
-    border-radius: 100%;
-    margin: 2rem auto;
+	display: block;
+	border-radius: 100%;
+	margin: 2rem auto;
 }
 
 .card ul {
-    list-style-type: none;
-    padding: 1rem;
-    margin: 1rem;
+	list-style-type: none;
+	// padding: 1rem;
+	// margin: 1rem;
 }
 
 .card li {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .card li:last-of-type {
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .card li span {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .card p {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .cardbody {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 .card img {
-    margin: auto;
+	margin: auto;
 }

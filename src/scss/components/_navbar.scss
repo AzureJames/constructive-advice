@@ -7,7 +7,8 @@
 	// font-family: a.$Poppins;
 	font-size: 1.8rem;
 	margin: 0 auto;
-	background-color: a.$off-white;
+	//background-color: a.$off-white;
+	padding: 2rem 1.6rem;
 
 	.logo {
 		align-self: flex-start;
@@ -75,7 +76,7 @@
 	}
 
 	.nav-item a:hover {
-		color: a.$off-black; 
+		color: a.$off-black;
 	}
 
 	.active {
