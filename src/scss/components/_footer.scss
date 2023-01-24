@@ -2,7 +2,7 @@
 
 body footer {
 	background-color: a.$off-white;
-	margin-top: 4rem;
+	margin-top: 8rem;
 
 	.main-footer {
 		padding-top: 2rem;
@@ -12,6 +12,10 @@ body footer {
 				height: 9rem;
 			}
 		}
+	}
+
+	.inner-container {
+		max-width: 140rem;
 	}
 
 	.secondary-footer {
@@ -25,7 +29,7 @@ body footer {
 		.main-footer {
 			width: 100%;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 
 			.footer-one {
 				text-align: left;

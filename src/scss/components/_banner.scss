@@ -10,7 +10,8 @@
 	border-radius: 58px;
 	background: a.$off-white;
 	box-shadow: inset 20px 20px 14px a.$gray, inset -20px -20px 14px a.$gray;
-	margin: 1rem 2rem 2rem 2rem;
+	margin: 1rem 1.6rem;
+	max-width: 140rem;
 
 	img {
 		width: 100%;
@@ -26,6 +27,7 @@
 
 .devbanner {
 	text-align: center;
+	margin: 8rem auto;
 }
 
 div > .devbanner {
