@@ -10,11 +10,11 @@ import '../scss/pages/_contact.scss';
 function Contact() {
 	return (
 		<div className='contact'>
-			<Navbar />
 			<div className='bg-contact'>
-		    	<BannerCard
+				<Navbar />
+				<BannerCard
 					index='text'
-					title='Contact' 
+					title='Contact'
 					body=' We would love to hear from you!  If your business is interested in saving time and paper, contact us below.'
 					body2=''
 				></BannerCard>
