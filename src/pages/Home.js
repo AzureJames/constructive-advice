@@ -19,10 +19,12 @@ function Home() {
 				<BannerCard
 					index='text'
 					title='Constructive Advice'
-					body='Behind every good business is a good idea.  Quickbooks has the software and I have the good idea.'
+					body='Behind every good business is a good idea.   has the software and I have the good idea.'
 					body2=''
 				></BannerCard>
-				{/* <div>
+				{/* 
+				Quickbooks
+				<div>
 					<h1 className='rate-title'>rate title</h1>
 					<HeroBanner />
 			    </div> */}
@@ -34,18 +36,20 @@ function Home() {
 				<p className='off-white m-w65'>
 					At Constructive Advice, we specialize in protecting the environment
 					while providing professional accounting services for businesses and
-					individuals. As QuickBooks ProAdvisor Program Members, we are
+					individuals. As // Program Members, we are
 					dedicated to helping you navigate the tax laws and regulations, so you
 					can focus on running your business.<br></br>Let us take the stress out
 					of accounting and help you achieve financial success, the green way!
-				</p>
+				</p> 
+				{/* QuickBooks ProAdvisor */}
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
 			<DevBanner
 				title='Our Mission: Green Accounting and Bookkeeping'
-				tagline='We are committed to the greening of accounting and bookkeeping. Quickbooks Online provides the software and our Proadvisors will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
+				tagline='We are committed to the greening of accounting and bookkeeping. // provides the software and our // will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
 			></DevBanner>
+			{/* Quickbooks Online . Proadvisors*/}
 			<div className='flex1200'>
 				<Card
 					index='text'
@@ -75,10 +79,11 @@ function Home() {
 				title='Planting Trees'
 				summary='Without our environment, what would we have?
 				To help care for our planet, Constructive Advice will donate 25 dollars to Re-tree NY for every client 
-				signed onto Quickbooks Online!'
+				signed onto //!'
 				src={Placeholder}
 				alt='Alt for the image'
 			/>
+			{/* Quickbooks Online */}
 			<div className='flex1200'>
 				<Card
 					index='text'
