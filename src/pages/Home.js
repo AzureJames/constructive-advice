@@ -19,7 +19,7 @@ function Home() {
 				<BannerCard
 					index='text'
 					title='Constructive Advice'
-					body='Behind every good business is a good idea.   has the software and I have the good idea.'
+					body='UNDER CONSTRUCTION. Behind every good business is a good idea.   has the software and I have the good idea.'
 					body2=''
 				></BannerCard>
 				{/* 
