@@ -44,8 +44,10 @@ const Footer = () => {
 					</div>
 					<div className='footer-two'>
 						<h3>Disclaimer</h3>
-						<p className='smltxt'>Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc.</p>
-						<p className='smltxt'>Used with permission under the QuickBooks ProAdvisor Agreement.</p>
+						<p className='smltxt'>.</p>
+						{/* Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc */}
+						<p className='smltxt'>.</p>
+						{/* Used with permission under the QuickBooks ProAdvisor Agreement */}
 					</div>
 				</div>
 
