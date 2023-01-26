@@ -36,12 +36,12 @@ function Home() {
 				<p className='off-white m-w65'>
 					At Constructive Advice, we specialize in protecting the environment
 					while providing professional accounting services for businesses and
-					individuals. As // Program Members, we are
+					individuals. As // , we are
 					dedicated to helping you navigate the tax laws and regulations, so you
 					can focus on running your business.<br></br>Let us take the stress out
 					of accounting and help you achieve financial success, the green way!
 				</p> 
-				{/* QuickBooks ProAdvisor */}
+				{/* QuickBooks ProAdvisor Program Members*/}
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
@@ -78,12 +78,12 @@ function Home() {
 				type=''
 				title='Planting Trees'
 				summary='Without our environment, what would we have?
-				To help care for our planet, Constructive Advice will donate 25 dollars to Re-tree NY for every client 
+				To help care for our planet, Constructive Advice will donate // for every client 
 				signed onto //!'
 				src={Placeholder}
 				alt='Alt for the image'
 			/>
-			{/* Quickbooks Online */}
+			{/*25 dollars to Re-tree NY , Quickbooks Online */}
 			<div className='flex1200'>
 				<Card
 					index='text'
