@@ -47,7 +47,7 @@ function Home() {
 			CURVY BANNER */}
 			<DevBanner
 				title='Our Mission: Green Accounting and Bookkeeping'
-				tagline='We are committed to the greening of accounting and bookkeeping. // provides the software and our // will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
+				tagline='We are committed to the greening of your accounting and bookkeeping records.. // provides the software and our // will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
 			></DevBanner>
 			{/* Quickbooks Online . Proadvisors*/}
 			<div className='flex1200'>
