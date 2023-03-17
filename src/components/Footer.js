@@ -19,7 +19,7 @@ const Footer = () => {
 						</div>
 						<div>
 							<p>
-								<a href='tel:1111111111'>1111111111</a>
+								<a href='tel:7168806069'>716-880-6069</a>
 							</p>
 							<p>
 								<a href='mailto:ConstructiveAdvice1@gmail.com'>ConstructiveAdvice1@gmail.com</a>
@@ -45,9 +45,9 @@ const Footer = () => {
 					<div className='footer-two'>
 						<h3>Disclaimer</h3>
 						<p className='smltxt'>.</p>
-						{/* Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc */}
+						Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc
 						<p className='smltxt'>.</p>
-						{/* Used with permission under the QuickBooks ProAdvisor Agreement */}
+						Used with permission under the QuickBooks ProAdvisor Agreement
 					</div>
 				</div>
 
