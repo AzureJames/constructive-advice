@@ -59,11 +59,17 @@ function Home() {
 				></Card>
 				<Card
 					index='text'
+					title='Service'
+					body='text text text text text text text text'
+					body2='text'
+				></Card>
+				{/* <Card
+					index='text'
 					title='1031s'
 					body='We do paperless 1031 exchanges!
 				With our expertise in navigating the complexities of tax laws and regulations, we can help you defer taxes and maximize your investment returns.'
 					body2='From identifying potential replacement properties, to ensuring compliance with the IRS guidelines, we’ll handle every step of the process.'
-				></Card>
+				></Card> */}
 				<a href='contact'>
 					<Card
 						index='text'

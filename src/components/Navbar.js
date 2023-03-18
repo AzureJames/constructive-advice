@@ -28,11 +28,11 @@ function Navbar(props) {
 								Home
 							</Link>
 						</li>
-						<li className='nav-item'>
+						{/* <li className='nav-item'>
 							<Link to='/tenthirtyone' onClick={closeMobileMenu}>
 								1031s
 							</Link>
-						</li>
+						</li> */}
 						<li className='nav-item'>
 							<Link to='/contact' onClick={closeMobileMenu}>
 								Contact
