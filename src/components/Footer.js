@@ -24,7 +24,7 @@ const Footer = () => {
 							<p>
 								<a href='mailto:ConstructiveAdvice1@gmail.com'>ConstructiveAdvice1@gmail.com</a>
 							</p>
-							<p>Web design by <a href='azurejames.com'>Azure James</a></p>
+							<p>Web design by <a href='https://azurejames.com/portfolio/'>Azure James</a></p>
 						</div>
 						{/* <ul>
 							<li className='nav-item'>
