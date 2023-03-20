@@ -14,8 +14,9 @@ const Footer = () => {
 				<div className='main-footer inner-container'>
 					<div className='footer-one'>
 						<div>
-							<h3>Our Location</h3>
-							<p>place</p>
+							<h3>Address</h3>
+							<p>120 Elmhurst Place, Suite C</p>
+							<p>Buffalo, NY 14216</p>
 						</div>
 						<div>
 							<p>
