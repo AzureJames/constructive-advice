@@ -34,7 +34,7 @@ function Home() {
 			    </div> */}
 			</div>
 
-			<CurvySection title='Icon' tagline='Statistic text'></CurvySection>
+			<CurvySection title='Paper and pulp is now one of the biggest causes of emissions' tagline='Paper and pulp is now one of the biggest causes of emissions'></CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>What I Do</h1>
 				<p className='off-white m-w65'>
