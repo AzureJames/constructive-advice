@@ -53,14 +53,21 @@ function Home() {
 			<div className='flex1200'>
 				<Card
 					index='text'
-					title='Service'
-					body='text text text text text text text text'
-					body2='text'
+					title='Services'
+					body="We provide a customized set-up specifically designed to meet your company's needs.  Included is:"
+					body2='* An interview that defines what version of Quickbooks Online will meet your needs and allow you to grow your business.
+					* Meeting with you on your premises for a one day tour of exactly what you do during the day to assist in the customization of your books and records.
+					* Subsequent Zoom Conferences throughout set-up
+					* Clean-up and consolidation of your current books and records 
+					*  Adding Customers, Vendors, Products and Services to your new file
+					* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with focus on: 
+					  1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.
+					  2. Training that reduces the need for volumes of paper '
 				></Card>
 				<Card
 					index='text'
-					title='Service'
-					body='text text text text text text text text'
+					title='Monthly or Quarterly Reviews'
+					body='Reviews ensure that your records are consistently clean and accurate for year-end closing and tax preparation. '
 					body2='text'
 				></Card>
 				{/* <Card
@@ -73,8 +80,8 @@ function Home() {
 				<a href='contact'>
 					<Card
 						index='text'
-						title='Get in Touch'
-						body='Click to contact us today and schedule a consultation.'
+						title='Project Work - Billed separately'
+						body='I am happy to provide services specifically designed for your company, such as Complex Inventory Systems, Preparation for Bank Loan requests, preparation for Grant Requests for Not-for-Profits, and Preparation for Year-end Taxes.'
 						body2=''
 					></Card>
 				</a>
@@ -94,21 +101,23 @@ function Home() {
 				<Card
 					index='text'
 					title='Pricing'
-					body='text text text text text text text text'
+					body='Pricing is competitive with the market.'
 					body2='text'
 				></Card>
-				<Card
-					index='text'
-					title='Business'
-					body='text text text text text text text text'
-					body2='text'
-				></Card>
-				<Card
+				<a href='contact'>
+					<Card
+						index='text'
+						title='Get in Touch'
+						body='Click to contact us today and schedule a consultation.'
+						body2=''
+					></Card>
+				</a>
+				{/* <Card
 					index='text'
 					title='Personal'
 					body='text text text text text text text text'
 					body2='text'
-				></Card>
+				></Card> */}
 			</div>
 			<Footer />
 		</div>
