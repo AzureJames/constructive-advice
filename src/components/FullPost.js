@@ -10,6 +10,7 @@ const FullPost = (props) => {
 				<p className='post-type'>{props.type}</p>
 				<h1 className='post-title'>{props.title}</h1>
 				<p className='post-summary'>{props.summary}</p>
+				<p className='post-summary'>{props.summary2}</p>
 
 				{/* <a
 					href={`post/${props.url}`}

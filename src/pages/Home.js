@@ -98,11 +98,11 @@ function Home() {
 				url='URL for the post'
 				type=''
 				title='Planting Trees'
-				summary='Trees are our valuable friends, and
-				planting trees in vacant areas vastly improves quality of life in Western New York. 
-				They clean the air that we breathe, shade our houses from the summer sun, and remove disabling carbon dioxide from the atmosphere. Planting trees has the potential for millions of dollars of benefits in air quality, energy, property value, and removing CO2. 
-				So to help care for our community and planet, Constructive Advice will donate 25 dollars to Re-tree NY for every client 
+				summary='Constructive Advice will donate 25 dollars to Re-tree NY for every client 
 				signed onto Quickbooks Online!'
+				summary2='Trees are our valuable friends, and
+				planting trees in vacant areas vastly improves quality of life in Western New York. 
+				They clean the air that we breathe, shade our houses from the summer sun, and remove disabling carbon dioxide from the atmosphere. Planting trees has the potential for millions of dollars of benefits in air quality, energy, property value, and removing CO2.'
 				src={Placeholder}
 				alt='green forest'
 			/>
