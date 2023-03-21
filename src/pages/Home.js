@@ -64,11 +64,14 @@ function Home() {
 					ull2='* Meeting with you on your premises for a one day tour of exactly what you do during the day to assist in the customization of your books and records.'
 					ull3='* Subsequent Zoom Conferences throughout set-up'
 					ull4='* Clean-up and consolidation of your current books and records '
-					ull5='*  Adding Customers, Vendors and Products and Services to your new file'
-					ull6='* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:'
-					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
-					oll2='2. Training that reduces the need for volumes of paper '
+					ull5='* Adding Customers, Vendors and Products and Services to your new file'
+					ull6=''
+					oll=''
+					oll2=''
 				></CardList>
+				{/* * Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:
+				1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.
+				2. Training that reduces the need for volumes of paper  */}
 				<Card
 					index='text'
 					title='Monthly or Quarterly Reviews'
