@@ -37,7 +37,7 @@ function Home() {
 			<CurvySection title="Let's go green!" tagline='Paper and pulp is now one of the biggest causes of emissions.'></CurvySection>
 			<div className='inner-container'>
 				<h1 className='off-white'>What I Do</h1>
-				<p className='off-white m-w65'>
+				<p className='off-white m-w65' style={{marginInline: '1rem'}}>
 					Constructive Advice specializes in protecting the environment
 					while providing professional accounting services for businesses and
 					individuals. As a QuickBooks ProAdvisor Program Member, I am
