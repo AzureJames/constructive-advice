@@ -9,6 +9,9 @@ import FullPost from '../components/FullPost';
 import CurvySection from '../components/CurvySection';
 import HeroBanner from '../components/HeroBanner';
 import Placeholder from '../img/forest-desktop.jpg';
+import CertifiedProfessionalBookkeeper from '../img/CertifiedProfessionalBookkeeper.jpg';
+import QuickBooksOnlineCertification from '../img/QuickBooksOnlineCertification.jpg';
+
 //STYLING
 import '../scss/pages/_home.scss';
 
@@ -122,6 +125,10 @@ function Home() {
 					body='text text text text text text text text'
 					body2='text'
 				></Card> */}
+			</div>
+			<div className='flex1200'>
+				<img src={CertifiedProfessionalBookkeeper} alt='certificate'></img>
+				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate'></img>
 			</div>
 			<Footer />
 		</div>
