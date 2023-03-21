@@ -9,7 +9,7 @@ const FullPost = (props) => {
 			<div className='content'>
 				<p className='post-type'>{props.type}</p>
 				<h1 className='post-title'>{props.title}</h1>
-				<p className='post-summary'>{props.summary}</p>
+				<p className='post-summary' style={{marginBottom: '2rem'}}>{props.summary}</p>
 				<p className='post-summary'>{props.summary2}</p>
 
 				{/* <a
