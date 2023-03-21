@@ -127,8 +127,8 @@ function Home() {
 				></Card> */}
 			</div>
 			<div className='flex1200'>
-				<img src={CertifiedProfessionalBookkeeper} alt='certificate'></img>
-				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate'></img>
+				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
+				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
 			<Footer />
 		</div>
