@@ -18,7 +18,7 @@ function Navbar(props) {
 			<nav className={`navbar ${props.className}`} role='navigation'>
 				<div className='logo'>
 					<a href='/'>
-						<img src={Logo} alt='Placeholder logo'></img>
+						<img src={Logo} alt='Placeholder logo' height={120} width={80}></img>
 					</a>
 				</div>
 				<div>
