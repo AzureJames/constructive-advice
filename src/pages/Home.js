@@ -105,6 +105,20 @@ function Home() {
 			/>
 			
 			<div className='flex1200'>
+		    	<CardList
+					index='text'
+					title='Training Offered'
+					body="Constructive Advice gives training sessions dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:"
+					body2=''
+					ull=''
+					ull2=''
+					ull3=''
+					ull4=''
+					ull5=''
+					ull6=''
+					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
+					oll2='2. Training that reduces the need for volumes of paper. '
+				></CardList>
 				<Card
 					index='text'
 					title='Pricing'
