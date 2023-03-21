@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
+import CardList from '../components/CardList';
 import BannerCard from '../components/BannerCard';
 import DevBanner from '../components/DevBanner';
 import FullPost from '../components/FullPost';
@@ -51,24 +52,25 @@ function Home() {
 			></DevBanner>
 			
 			<div className='flex1200'>
-				<Card
+				<CardList
 					index='text'
 					title='Services'
 					body="We provide a customized set-up specifically designed to meet your company's needs.  Included is:"
-					body2='* An interview that defines what version of Quickbooks Online will meet your needs and allow you to grow your business.
-					* Meeting with you on your premises for a one day tour of exactly what you do during the day to assist in the customization of your books and records.
-					* Subsequent Zoom Conferences throughout set-up
-					* Clean-up and consolidation of your current books and records 
-					*  Adding Customers, Vendors, Products and Services to your new file
-					* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with focus on: 
-					  1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.
-					  2. Training that reduces the need for volumes of paper '
-				></Card>
+					body2=''
+					ull='* An interview that defines what version of Quickbooks Online will meet your needs and allow you to grow your business.'
+					ull2='* Meeting with you on your premises for a one day tour of exactly what you do during the day to assist in the customization of your books and records.'
+					ull3='* Subsequent Zoom Conferences throughout set-up'
+					ull4='* Clean-up and consolidation of your current books and records '
+					ull5='*  Adding Customers, Vendors and Products and Services to your new file'
+					ull6='* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with focus on:'
+					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
+					oll2='2. Training that reduces the need for volumes of paper '
+				></CardList>
 				<Card
 					index='text'
 					title='Monthly or Quarterly Reviews'
 					body='Reviews ensure that your records are consistently clean and accurate for year-end closing and tax preparation. '
-					body2='text'
+					body2=''
 				></Card>
 				{/* <Card
 					index='text'
@@ -102,7 +104,7 @@ function Home() {
 					index='text'
 					title='Pricing'
 					body='Pricing is competitive with the market.'
-					body2='text'
+					body2=''
 				></Card>
 				<a href='contact'>
 					<Card

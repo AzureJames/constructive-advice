@@ -43,7 +43,7 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<div className='footer-two'>
+					<div className='footer-two' style={{marginTop: '20px'}}>
 						<h3>Disclaimer</h3>
 						<p className='smltxt'>Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc</p>
 						<p className='smltxt'>Used with permission under the QuickBooks ProAdvisor Agreement</p>						
