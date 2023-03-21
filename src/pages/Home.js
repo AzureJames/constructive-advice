@@ -92,7 +92,8 @@ function Home() {
 				url='URL for the post'
 				type=''
 				title='Planting Trees'
-				summary='Without our environment, what would we have?
+				summary='Trees are our valuable friends.
+				Planting trees in vacant areas has the potential for millions of dollars of benefits in air quality, energy, property value, and removing CO2. 
 				To help care for our planet, Constructive Advice will donate 25 dollars to Re-tree NY for every client 
 				signed onto Quickbooks Online!'
 				src={Placeholder}
