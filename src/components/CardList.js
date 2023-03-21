@@ -3,7 +3,7 @@ import '../scss/components/_card.scss';
 import { useState } from 'react';
 
 
-export default function CardList({...oll3}) {
+export default function CardList({index, title, body, body2, ull, ull2, ull3, ull4, ull5, ull6, oll, oll2, oll3}) {
   
 
   return (
