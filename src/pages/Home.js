@@ -62,7 +62,7 @@ function Home() {
 					ull3='* Subsequent Zoom Conferences throughout set-up'
 					ull4='* Clean-up and consolidation of your current books and records '
 					ull5='*  Adding Customers, Vendors and Products and Services to your new file'
-					ull6='* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with focus on:'
+					ull6='* Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:'
 					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
 					oll2='2. Training that reduces the need for volumes of paper '
 				></CardList>
