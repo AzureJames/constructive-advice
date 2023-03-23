@@ -19,7 +19,7 @@ export default function CurvySection({title, tagline, image,theClass, svgColor})
 </svg>
            
             <img src={img} width='130' height='100' alt="test"/>
-            <h2 className='title off-white'>{title}</h2>
+            <h2 className='title off-white' style={{paddingBottom: '1rem'}}>{title}</h2>
             <p className='description off-white' style={{marginTop: '0px', marginBottom: '5rem'}}>{tagline}</p>
         </div>
     </>
