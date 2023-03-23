@@ -44,7 +44,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='footer-two' style={{marginTop: '20px'}}>
-						<q style={{fontSize: '16px', paddingBlock: '1rem', display: 'block'}}>A society grows great when old men plant trees in whose shade they shall never sit in.</q><cite style={{fontSize: '16px', paddingBlock: '1rem'}}> -Greek Proverb</cite>
+						<q style={{fontSize: '16px', paddingBlock: '1rem', display: 'block'}}>A society grows great when old men plant trees in whose shade they shall never sit.</q><cite style={{fontSize: '16px', paddingBlock: '1rem'}}> -Greek Proverb</cite>
 						<h3>Disclaimer</h3>
 						<p className='smltxt'>Intuit, QuickBooks, and QuickBooks ProAdvisor are registered trademarks of Intuit Inc</p>
 						<p className='smltxt'>Used with permission under the QuickBooks ProAdvisor Agreement</p>						
