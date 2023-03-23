@@ -40,9 +40,8 @@ function Home() {
 				<p className='off-white m-w65' style={{marginInline: '1rem'}}>
 					Constructive Advice specializes in protecting the environment
 					while providing professional accounting services for businesses and
-					individuals. As a QuickBooks ProAdvisor Program Member, I am
-					dedicated to helping you navigate the tax laws and regulations, so you
-					can focus on running your business.<br></br>Let us take the stress out
+					individuals. As a Quickbooks Proadvisor Program Member I am dedicated to helping you make your accounting and bookkeeping needs simpler, quicker, 
+					more accurate and paperless, giving you more time to focus on growing your business!<br></br>Let's take the stress out
 					of accounting and help you achieve financial success, the green way!
 				</p> 
 				
