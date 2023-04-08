@@ -35,16 +35,16 @@ function Home() {
 			</div>
 
 			<CurvySection title="Let's go green!" tagline='Paper and pulp is now one of the biggest causes of emissions.'></CurvySection>
-			<div className='inner-container'>
+			<div className='inner-container' style={{marginBottom: '3rem'}}>
 				<h1 className='off-white'>What I Do</h1>
-				<p className='off-white m-w65' style={{marginInline: '1rem'}}>
+				<p className='off-white m-w65' style={{marginInline: '1rem', marginBottom: '2rem'}}>
 					Constructive Advice specializes in protecting the environment
 					while providing professional accounting services for businesses and
 					individuals. As a Quickbooks Proadvisor Program Member I am dedicated to helping you make your accounting and bookkeeping needs affordable, simpler, quicker, 
 					more accurate and paperless, giving you more time to focus on growing your business!<br></br>Let's take the stress out
 					of accounting and help you achieve financial success, the green way!
 				</p> 
-				
+				<a href='http://eepurl.com/ioFNzc' className='btn btn--primary'>Subscribe</a>
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
@@ -142,8 +142,7 @@ function Home() {
 					body2='text'
 				></Card> */}
 			</div>
-			<a href='http://eepurl.com/ioFNzc' className='btn btn--primary'>Subscribe</a>
-			<div className='flex1200' style={{marginTop: '3rem'}}>
+			<div className='flex1200'>
 				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
