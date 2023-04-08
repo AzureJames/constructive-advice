@@ -142,7 +142,8 @@ function Home() {
 					body2='text'
 				></Card> */}
 			</div>
-			<div className='flex1200'>
+			<a href='http://eepurl.com/ioFNzc' className='btn btn--primary'>Subscribe</a>
+			<div className='flex1200' style={{marginTop: '3rem'}}>
 				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
