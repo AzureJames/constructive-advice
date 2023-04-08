@@ -131,7 +131,7 @@ function Home() {
 					<Card
 						index='text'
 						title='Get in Touch'
-						body='Click to contact us today and schedule a consultation.'
+						body='Click here to contact us today and schedule a consultation.'
 						body2=''
 					></Card>
 				</a>
