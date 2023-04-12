@@ -9,7 +9,7 @@ export default function DevBanner({title, tagline, tagline2, image, svgColor}) {
             <h1 className='title'>{title}</h1>
               <img src={img} width={375} height={250} alt="mountain forest"/>
             <p className='description'>{tagline}</p>
-            <p className='description'>{tagline2}</p>
+            <p className='description' style={{fontSize: '21px', fontWeight: 'bold'}}>{tagline2}</p>
         </div>
     </>
   )
