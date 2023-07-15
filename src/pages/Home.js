@@ -136,14 +136,14 @@ function Home() {
 					Small business tax,
 					Tax preparation,
 					Cost accounting, and
-					Consulting
+					Consulting.
 					"
 					body2=''
 					ull='QuickBooks Services:'
-					ull2='*setup'
-					ull3='*training'
-					ull4='*consulting'
-					ull5='*payroll'
+					ull2='*Setup'
+					ull3='*Training'
+					ull4='*Consulting'
+					ull5='*Payroll'
 					ull6='Pricing: We practice Value Pricing'
 					oll=''
 					oll2=''
