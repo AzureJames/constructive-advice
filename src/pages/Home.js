@@ -122,12 +122,27 @@ function Home() {
 					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
 					oll2='2. Training that reduces the need for volumes of paper. '
 				></CardList>
-				<Card
+				<CardList
 					index='text'
-					title='Pricing'
-					body='Pricing is competitive with the market.'
+					title='My Specialties'
+					body=""
 					body2=''
-				></Card>
+					ull='Accounting
+					Inventory services
+					Payroll
+					Personal tax
+					QuickBooks setup, training, consulting, and payroll
+					Self-employed Schedule C tax
+					Small business tax
+					Tax preparation'
+					ull2='Book cleanup'
+					ull3='Bookkeeping'
+					ull4='Business budgeting and forecasting'
+					ull5='Consulting'
+					ull6='Cost accounting'
+					oll='Pricing: We practice Value Pricing'
+					oll2=''
+				></CardList>
 				<a href='contact'>
 					<Card
 						index='text'
