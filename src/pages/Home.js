@@ -125,22 +125,27 @@ function Home() {
 				<CardList
 					index='text'
 					title='My Specialties'
-					body=""
+					body="Accounting,
+					Inventory services,
+					Payroll,
+					Personal tax,
+					Book cleanup,
+					Bookkeeping,
+					Business budgeting and forecasting,
+					Self-employed Schedule C tax,
+					Small business tax,
+					Tax preparation,
+					Cost accounting, and
+					Consulting
+					"
 					body2=''
-					ull='Accounting
-					Inventory services
-					Payroll
-					Personal tax
-					QuickBooks setup, training, consulting, and payroll
-					Self-employed Schedule C tax
-					Small business tax
-					Tax preparation'
-					ull2='Book cleanup'
-					ull3='Bookkeeping'
-					ull4='Business budgeting and forecasting'
-					ull5='Consulting'
-					ull6='Cost accounting'
-					oll='Pricing: We practice Value Pricing'
+					ull='QuickBooks Services:'
+					ull2='*setup'
+					ull3='*training'
+					ull4='*consulting'
+					ull5='*payroll'
+					ull6='Pricing: We practice Value Pricing'
+					oll=''
 					oll2=''
 				></CardList>
 				<a href='contact'>
