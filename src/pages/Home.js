@@ -164,6 +164,10 @@ function Home() {
 				></Card> */}
 			</div>
 			<div className='flex1200'>
+				<div style={{display:"flex", alignItems:"center"}}>
+					<img src="../img/aan.png" alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
+					<h3>Member</h3>
+				</div>
 				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
