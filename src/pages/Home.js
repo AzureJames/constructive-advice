@@ -11,6 +11,7 @@ import HeroBanner from '../components/HeroBanner';
 import Placeholder from '../img/forest-desktop.jpg';
 import CertifiedProfessionalBookkeeper from '../img/CertifiedProfessionalBookkeeper.jpg';
 import QuickBooksOnlineCertification from '../img/QuickBooksOnlineCertification.jpg';
+import Aan from "../img/aan.png";
 
 //STYLING
 import '../scss/pages/_home.scss';
@@ -165,8 +166,8 @@ function Home() {
 			</div>
 			<div className='flex1200'>
 				<div style={{display:"flex", alignItems:"center"}}>
-					<img src="../img/aan.png" alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
-					<h3>Member</h3>
+					<img src={Aan} alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
+					<h3 style={{color:"white"}}>Member</h3>
 				</div>
 				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
