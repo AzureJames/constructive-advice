@@ -24,7 +24,7 @@ function Home() {
 				<BannerCard
 					index='text'
 					title='Constructive Advice'
-					body='Behind every good business is a good idea. Quickbooks has the software and I have the good idea.'
+					body='Breathe easier with Quickbooks Online! Full service accounting and bookkeeping on a 100% digital platform.'
 					body2=''
 				></BannerCard>
 				{/* 
