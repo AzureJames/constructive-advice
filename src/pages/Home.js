@@ -24,8 +24,8 @@ function Home() {
 				<BannerCard
 					index='text'
 					title='Constructive Advice'
-					body='Breathe easier with Quickbooks Online! Full service accounting and bookkeeping on a 100% digital platform.'
-					body2=''
+					body='Breathe easier with Quickbooks Online!'
+					body2='Full service accounting and bookkeeping on a 100% digital platform.'
 				></BannerCard>
 				{/* 
 				
