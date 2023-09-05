@@ -17,7 +17,7 @@ export default function Card({index, title, body, body2}) {
     <div className='flex'>
         <div className='bannercard' key={index} > 
             <div className='cardtop'>
-                <h2 className='h2two'>{title}</h2>
+                <h2 className='h2two' style={{textAlign:"center"}}>{title}</h2>
             </div>
             <div className='servicecard'>
                 {/* <img src={pic} alt="hello" width={128} height={128}/> */}
