@@ -22,9 +22,9 @@ export default function Card({index, title, body, body2}) {
             <div className='servicecard'>
                 {/* <img src={pic} alt="hello" width={128} height={128}/> */}
                 <ul>
-                    <li>
-                        <p>{body}</p>
-                        <p>{body2}</p>
+                    <li style={{textAlign: 'center'}}>
+                        <p style={{fontWeight: 'bold'}}>{body}</p>
+                        <p style={{textDecoration: "italic"}}>{body2}</p>
                     </li>
                 </ul>
             </div>
