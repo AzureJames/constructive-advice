@@ -6,6 +6,7 @@ import CardList from '../components/CardList';
 import BannerCard from '../components/BannerCard';
 import DevBanner from '../components/DevBanner';
 import FullPost from '../components/FullPost';
+import Gold from '../img/gold.png';
 import CurvySection from '../components/CurvySection';
 import HeroBanner from '../components/HeroBanner';
 import Placeholder from '../img/forest-desktop.jpg';
@@ -169,6 +170,7 @@ function Home() {
 					<img src={Aan} alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
 					<h3 style={{color:"white"}}>Member</h3>
 				</div>
+				<img src={Gold} alt='gold rating' style={{maxWidth: '100vw'}}></img>
 				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
