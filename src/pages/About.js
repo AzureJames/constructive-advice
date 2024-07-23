@@ -6,11 +6,13 @@ import '../scss/pages/_about.scss';
 
 function About() {
 	return (
-		<div className='about'>
-			<Navbar />
-			<h1>About Us Page</h1>
-			<Footer />
-		</div>
+		<>
+			<div className='about'>
+				<Navbar />
+				<h1>About Us Page</h1>
+				<Footer />
+			</div>
+		</>
 	);
 }
 
