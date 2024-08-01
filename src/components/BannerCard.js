@@ -31,6 +31,8 @@ export default function Card({index, title, body, body2}) {
             </div>
         </div>
     </div>
-    <h2 className='h2two' style={{color:"white", textAlign:"center", marginTop:"20vh", lineHeight:'1'}}>Take the First Step with Me!</h2>
-    </>
+    <div style={{background:"#163014", textAlign:"center", paddingBlock:'1rem',marginTop:"20vh"}}>
+        <h2 className='h2two' style={{color:"white", textAlign:"center", lineHeight:'1'}}>Take the First Step with Me!</h2>
+    </div>
+   </>
     )};
