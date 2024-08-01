@@ -14,6 +14,7 @@ export default function Card({index, title, body, body2}) {
   
     
   return (
+    <>
     <div className='flex'>
         <div className='bannercard' key={index} > 
             <div className='cardtop'>
@@ -30,4 +31,6 @@ export default function Card({index, title, body, body2}) {
             </div>
         </div>
     </div>
+    <h2 className='h2two' style={{color:"white", textAlign:"center", marginTop:"20vh", lineHeight:'1'}}>Take the First Step with Me!</h2>
+    </>
     )};

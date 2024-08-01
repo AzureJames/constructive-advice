@@ -5,11 +5,11 @@
 			rgba(255, 255, 255, 0.2),
 			rgba(255, 255, 255, 0.2)
 		),
-		url('../../img/desk.jpg');
+		url('../../img/greek-quote-comp-header.jpg');
 	padding-bottom: 15rem;
 	// padding-top: 6rem;
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: center;
 	background-size: cover;
 
 	.button {
@@ -20,10 +20,10 @@
 @media screen and (min-width: 430px) {
 	.bg {
 		background-image: linear-gradient(
-				rgba(255, 255, 255, 0.2),
-				rgba(255, 255, 255, 0.2)
+				rgba(255, 255, 255, 0.0),
+				rgba(255, 255, 255, 0.0)
 			),
-			url('../../img/desk.jpg');
+			url('../../img/greek-quote-comp-header.jpg');
 		background-size: cover;
 	}
 }
