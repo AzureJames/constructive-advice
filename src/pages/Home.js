@@ -40,7 +40,7 @@ function Home() {
 			<div className='inner-container' style={{marginBottom: '3rem'}}>
 				<h1 className='off-white'>What I Do</h1>
 				<p className='off-white m-w65' style={{marginInline: '1rem', marginBottom: '2rem'}}>
-					Constructive Advice specializes in protecting the environment
+					Quickbooks supplies the software and I supply the training and support.<br>Constructive Advice specializes in protecting the environment
 					while providing professional accounting services for businesses and
 					individuals. As a Quickbooks Proadvisor I am dedicated to helping you make your accounting and bookkeeping needs affordable, simpler, quicker, 
 					more accurate and <span style={{borderBottom:'1px dashed beige'}}>paperless</span>, giving you more time to focus on growing your business!<br></br>Let's take the stress out
