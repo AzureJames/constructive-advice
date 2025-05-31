@@ -32,7 +32,7 @@ export default function Card({index, title, body, body2}) {
         </div>
     </div>
     <div style={{background:"rgba(22, 48, 20,.7)", textAlign:"center", paddingBlock:'1rem',marginTop:"20vh"}}>
-        <h2 className='h2two' style={{color:"white", textAlign:"center", lineHeight:'1'}}>Take the First Step with Me!</h2>
+        <h2 className='h' style={{color:"white", textAlign:"center", lineHeight:'1'}}>Take the First Step with Me!<br></br>It's Only a Drag, Drop or Snap Away!</h2>
     </div>
    </>
     )};
