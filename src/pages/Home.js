@@ -173,7 +173,7 @@ function Home() {
 				</div>
 				<img src={Gold} alt='gold rating' style={{maxWidth: '100vw'}}></img>
 				<img src={Payroll} alt='qb payroll cert' style={{maxWidth: '100vw'}}></img>
-				<img src={CertifiedProfessionalBookkeeper} alt='certificate' style={{maxWidth: '100vw'}}></img>
+				<img src={CertifiedProfessionalBookkeeper} width='450' alt='certificate' style={{maxWidth: '450px'}}></img>
 				
 				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
 			</div>
