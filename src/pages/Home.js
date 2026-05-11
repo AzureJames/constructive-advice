@@ -171,7 +171,7 @@ function Home() {
 					<img src={Aan} alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
 					<h3 style={{color:"white"}}>Member</h3>
 				</div>
-				<img src={Gold} alt='gold rating' style={{maxWidth: '100vw'}}></img>
+				<img src={Gold} alt='gold rating' style={{maxWidth: '450px'}}></img>
 				<img src={Payroll} alt='qb payroll cert' style={{maxWidth: '100vw'}}></img>
 				<img src={CertifiedProfessionalBookkeeper} width='450' alt='certificate' style={{maxWidth: '450px'}}></img>
 				
