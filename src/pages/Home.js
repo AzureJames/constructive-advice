@@ -51,7 +51,7 @@ function Home() {
 				<p className='off-white m-w65' style={{margin: '1rem'}}>
 						"Roz is an incredible human being and accountant- thorough and gets the job
 done in a timely manner. I have full trust in her for all my accounting needs."
-<br>-Cory Gallagher
+<br/>-Cory Gallagher
 				</p>
 			</div>
 			{/* HERO BANNER FROM BLC??
