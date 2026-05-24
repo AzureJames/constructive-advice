@@ -48,7 +48,7 @@ function Home() {
 					of accounting and help you achieve financial success, the green way!
 				</p> 
 				<a href='http://eepurl.com/ioFNzc' className='btn btn--primary'>Subscribe</a>
-				<p className='off-white m-w65' style={{margin: '1rem', font-style: 'italic'}}>
+				<p className='off-white m-w65' style={{margin: '1rem', fontStyle: 'italic'}}>
 						"Roz is an incredible human being and accountant- thorough and gets the job
 done in a timely manner. I have full trust in her for all my accounting needs."
 <br></br>-Cory Gallagher
