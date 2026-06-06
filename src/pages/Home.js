@@ -53,6 +53,10 @@ function Home() {
 done in a timely manner. I have full trust in her for all my accounting needs."
 <br></br>-Cory Gallagher
 				</p>
+				<p className='off-white m-w65' style={{margin: '1rem', fontStyle: 'italic'}}>
+										"Knows what she is doing.  Professional and thorough.  10 out of 10, would recommend!!" 
+				<br></br>-Juan Iglesius
+				</p>
 			</div>
 			{/* HERO BANNER FROM BLC??
 			CURVY BANNER */}
