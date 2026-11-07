@@ -1,0 +1,47 @@
+@use '../assets' as a;
+
+.cta-wrap {
+	margin: 9rem auto 0;
+	max-width: 100rem; // matches .inner-container width so the panel lines up with page content
+	padding-inline: 2.4rem;
+	box-sizing: border-box;
+}
+
+.cta-panel {
+	background-color: a.$forest;
+	border-radius: 1.4rem;
+	padding: 6.4rem 5.6rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+	box-sizing: border-box;
+
+	h2 {
+		color: a.$cream-soft;
+		font-size: 4.2rem;
+		margin: 0 0 1.8rem;
+	}
+
+	.cta-copy {
+		color: rgba(243, 241, 228, 0.8);
+		font-size: 1.6rem;
+		margin: 0;
+	}
+
+	.btn--cream {
+		flex: none;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.cta-panel {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 4rem 3rem;
+	}
+
+	.cta-panel h2 {
+		font-size: 3.4rem;
+	}
+}

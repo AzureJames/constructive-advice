@@ -1,146 +1,527 @@
 @use '../assets' as a;
 
+// ═══════════════════════════════════════════════
+// Website redesign — homepage (mockup: Website_Mockup.docx)
+// Palette + typography tokens live in scss/assets
+// ═══════════════════════════════════════════════
+
 .home {
-	background-color: a.$primary;
+	background-color: a.$cream;
+	color: a.$ink;
+
+	// give the shared .inner-container side padding on this page
+	.inner-container {
+		padding-inline: 2.4rem;
+	}
+
+	.dot {
+		margin-inline: 0.6rem;
+		color: a.$moss;
+	}
 }
 
-.container {
-	padding: 0 2rem;
+// ── Hero ──
+.hero {
+	display: grid;
+	grid-template-columns: 1.05fr 0.95fr;
+	align-items: center;
+	gap: 4rem;
+	padding-top: 6rem;
+	padding-bottom: 8rem;
 }
 
-.main {
-	min-height: 100vh;
-	padding: 4rem 0;
-	flex: 1;
+.hero-eyebrow {
+	color: a.$forest;
+	margin: 0;
+}
+
+.hero-title {
+	font-size: clamp(4.2rem, 6.4vw, 7.2rem);
+	margin: 2rem 0 2.8rem;
+	color: a.$ink;
+}
+
+.hero-accent {
+	color: a.$moss;
+	font-style: italic;
+}
+
+.hero-sub {
+	max-width: 42rem;
+	font-size: 1.9rem;
+	margin: 0 0 3.2rem;
+}
+
+.hero-actions {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	flex-wrap: wrap;
+	margin-bottom: 2.4rem;
+}
+
+.hero-note {
+	font-size: 1.5rem;
+	color: #5f6a5f;
+	margin: 0;
+}
+
+.hero-art {
+	position: relative;
+	background-color: a.$sage-deep;
+	border-radius: 36rem 36rem 3.2rem 3.2rem;
+	padding: 7rem 5rem 9rem;
+	min-height: 44rem;
+
+	// thin decorative circle behind the card
+	&::before {
+		content: '';
+		position: absolute;
+		top: 3rem;
+		right: 4rem;
+		width: 32rem;
+		height: 32rem;
+		border: 1px solid rgba(30, 59, 42, 0.22);
+		border-radius: 50%;
+	}
+}
+
+.art-card {
+	position: relative;
+	background-color: a.$cream-soft;
+	border-radius: 1rem;
+	box-shadow: 0 24px 48px rgba(30, 59, 42, 0.14);
+	padding: 2.6rem 2.8rem;
+	max-width: 44rem;
+	box-sizing: border-box;
+}
+
+.art-title {
+	font-size: 2.7rem;
+	margin: 0 0 2rem;
+}
+
+.art-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 2.6rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
+	gap: 1.3rem;
 
-.footer {
-	display: flex;
-	flex: 1;
-	flex-wrap: wrap;
-	padding: 2rem 0;
-	border-top: 1px solid #eaeaea;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer a {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-grow: 1;
-}
-
-.title a {
-	color: #0070f3;
-	text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
-}
-
-.title {
-	margin: 0;
-	line-height: 1.15;
-	font-size: 4rem;
-	padding-bottom: 3rem;
-}
-
-.title,
-.description {
-	text-align: center;
-}
-
-.description {
-	margin: 3rem 0;
-	line-height: 1.5;
-	//font-size: 1.6rem;
-}
-
-.code {
-	background: #fafafa;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 1.1rem;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
-}
-
-.card {
-	margin: 1rem;
-	padding: 2rem;
-	text-align: left;
-	color: inherit;
-	text-decoration: none;
-	border-radius: 10px;
-	transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-@media screen and (min-width: 768px) {
-	.card {
-		max-width: 450px;
+	li {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		font-size: 1.5rem;
+		color: #464c45;
 	}
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-	color: #0070f3;
-	border-color: #0070f3;
-}
+.art-check {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	background-color: a.$sage;
+	color: a.$forest;
+	padding: 0.55rem; // centers the 1.2rem svg in the 2.4rem circle (border-box)
+	box-sizing: border-box;
 
-.card h2 {
-	margin: 0 0 1rem 0;
-}
-
-.card p {
-	margin: 0;
-}
-
-.logo {
-	height: 1em;
-	margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
+	svg {
+		width: 1.3rem;
+		height: 1.3rem;
+		display: block;
 	}
 }
 
-// @media (prefers-color-scheme: dark) {
-// 	.card,
-// 	.footer {
-// 		border-color: #222;
-// 	}
-// 	.code {
-// 		background: #111;
-// 	}
-// 	.logo img {
-// 		filter: invert(1);
-// 	}
-// }
+.art-progress {
+	height: 0.6rem;
+	border-radius: 0.3rem;
+	background-color: rgba(30, 59, 42, 0.12);
+	overflow: hidden;
 
-.flex1200 {
+	span {
+		display: block;
+		width: 78%;
+		height: 100%;
+		border-radius: inherit;
+		background-color: a.$moss;
+	}
+}
+
+.art-float {
+	position: absolute;
+	right: 2.4rem;
+	bottom: 4rem;
 	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
 	align-items: flex-start;
-	justify-content: center;
+	gap: 1.4rem;
+	background-color: a.$forest;
+	border-radius: 1rem;
+	padding: 1.8rem 2.2rem;
+	max-width: 36rem;
+	box-shadow: 0 20px 40px rgba(21, 43, 30, 0.35);
+	box-sizing: border-box;
+
+	.float-arrow {
+		font-size: 1.9rem;
+		color: a.$cream-soft;
+		margin-top: -0.2rem;
+	}
+
+	.float-title {
+		margin: 0;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: a.$cream-soft;
+	}
+
+	.float-sub {
+		margin: 0.4rem 0 0;
+		font-size: 1.35rem;
+		color: rgba(243, 241, 228, 0.75);
+	}
+}
+
+// ── Feature strip ──
+.feature-strip {
+	border-block: 1px solid a.$hairline;
+	padding: 2.6rem 0;
+
+	.strip-list {
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem 4rem;
+		justify-content: space-between;
+
+		li {
+			display: flex;
+			align-items: center;
+			gap: 0.9rem;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.strip-check {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	color: a.$moss;
+
+	svg {
+		width: 1.4rem;
+		height: 1.4rem;
+		display: block;
+	}
+}
+
+// ── Services ──
+.services {
+	scroll-margin-top: 2rem;
+	padding-top: 9rem;
+}
+
+.services-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 3rem;
+	margin-bottom: 4.6rem;
+
+	h2 {
+		margin: 0;
+		font-size: 4.4rem;
+	}
+}
+
+.services-eyebrow {
+	color: a.$forest;
+	font-size: 1.3rem;
+	margin: 0 0 1.4rem;
+}
+
+.services-intro {
+	max-width: 30rem;
+	margin: 0;
+	font-size: 1.5rem;
+	text-align: right;
+	color: #464c45;
+}
+
+.services-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.4rem;
+}
+
+.service-card {
+	display: flex;
+	flex-direction: column;
+	gap: 1.8rem;
+	background-color: a.$cream-soft;
+	border: 1px solid a.$hairline;
+	border-radius: 1rem;
+	padding: 3.2rem 2.8rem 3.6rem;
+
+	h3 {
+		margin: 0;
+		font-size: 2.6rem;
+	}
+}
+
+.service-label {
+	font-family: a.$font-serif;
+	font-weight: 600;
+	font-size: 1.7rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: a.$moss;
+	margin: 0;
+}
+
+.service-body {
+	font-size: 1.5rem;
+	color: #464c45;
+	margin: 0;
+	flex: 1;
+}
+
+.service-link {
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: a.$forest;
+	text-decoration: none;
+
+	span {
+		margin-left: 0.6rem;
+	}
+
+	&:hover {
+		color: a.$forest-deep;
+		text-decoration: underline;
+		text-underline-offset: 0.5rem;
+	}
+}
+
+// ── About Roslyn band ──
+.meet-guide {
+	background-color: a.$sage;
+	margin-top: 9rem;
+	padding: 9rem 0;
+
+	.inner-container {
+		box-sizing: border-box;
+	}
+}
+
+.meet-grid {
+	display: grid;
+	grid-template-columns: minmax(22rem, 30rem) 1fr;
+	gap: 6rem;
+	align-items: center;
+}
+
+.guide-tile {
+	aspect-ratio: 4 / 5;
+	background-color: a.$forest;
+	border-radius: 50rem 50rem 2.4rem 2.4rem / 40rem 40rem 2.4rem 2.4rem;
+	display: grid;
+	place-items: center;
+}
+
+.guide-monogram {
+	font-family: a.$font-serif;
+	font-weight: 500;
+	font-size: 7.4rem;
+	letter-spacing: 0.04em;
+	color: rgba(243, 241, 228, 0.92);
+}
+
+.meet-eyebrow {
+	color: a.$forest;
+	font-size: 1.3rem;
+	margin: 0 0 1.8rem;
+}
+
+.meet-copy {
+	h2 {
+		font-size: 4.2rem;
+		margin: 0 0 2.6rem;
+	}
+
+	p {
+		font-size: 1.7rem;
+		max-width: 48rem;
+
+		& + p {
+			margin-top: 1.8rem;
+		}
+	}
+}
+
+// ── Testimonial ──
+.testimonial {
+	padding-top: 9rem;
+	display: grid;
+	grid-template-columns: minmax(16rem, 22rem) 1fr;
+	gap: 4rem;
+	align-items: start;
+}
+
+.testimonial-quotes {
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+}
+
+.test-eyebrow {
+	color: a.$forest;
+	font-size: 1.3rem;
+	margin: 0 0 1.2rem;
+}
+
+.stars {
+	color: a.$gold;
+	font-size: 1.8rem;
+	letter-spacing: 0.3rem;
+}
+
+.testimonial-quote {
+	font-family: a.$font-serif;
+	font-size: 2.6rem;
+	line-height: 1.35;
+	color: a.$ink;
+	margin: 0;
+}
+
+.testimonial-cite {
+	font-size: 1.4rem;
+	color: #5f6a5f;
+	margin: 1.6rem 0 0;
+}
+
+// ── Green approach ──
+.green-band {
+	background-color: a.$sage;
+	margin-top: 9rem;
+	padding: 8rem 0;
+	scroll-margin-top: 2rem;
+
+	.inner-container {
+		box-sizing: border-box;
+	}
+}
+
+.green-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+	gap: 5rem;
+	align-items: center;
+
+	h2 {
+		font-size: 4.2rem;
+		color: a.$forest;
+		margin: 0;
+	}
+
+	p {
+		font-size: 1.7rem;
+		max-width: 52rem;
+		margin: 0;
+	}
+}
+
+// ── Responsive ──
+@media only screen and (max-width: 960px) {
+	.hero {
+		grid-template-columns: 1fr;
+		padding-top: 4rem;
+	}
+
+	.hero-art {
+		max-width: 52rem;
+	}
+
+	.art-float {
+		max-width: 32rem;
+	}
+
+	.services-head {
+		flex-direction: column;
+		align-items: flex-start;
+
+		h2 {
+			font-size: 3.6rem;
+		}
+
+		.services-intro {
+			text-align: left;
+		}
+	}
+
+	.services-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.meet-guide,
+	.green-band {
+		padding: 6rem 0;
+	}
+
+	.meet-grid {
+		grid-template-columns: 1fr;
+		gap: 3.6rem;
+	}
+
+	.guide-tile {
+		width: 22rem;
+	}
+
+	.meet-copy h2,
+	.green-grid h2 {
+		font-size: 3.4rem;
+	}
+
+	.testimonial {
+		grid-template-columns: 1fr;
+		gap: 2.4rem;
+	}
+
+	.testimonial-quote {
+		font-size: 2.4rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.hero-art {
+		padding: 4.5rem 3rem 12rem;
+		border-radius: 24rem 24rem 2.4rem 2.4rem;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	.art-card {
+		padding: 2rem 1.8rem;
+	}
+
+	.art-float {
+		right: 1.6rem;
+		bottom: 3rem;
+		max-width: calc(100% - 3.2rem);
+	}
+
+	.feature-strip .strip-list {
+		flex-direction: column;
+		gap: 1.4rem;
+	}
 }

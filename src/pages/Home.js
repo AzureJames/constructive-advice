@@ -1,19 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaCheck } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import Card from '../components/Card';
-import CardList from '../components/CardList';
-import BannerCard from '../components/BannerCard';
-import DevBanner from '../components/DevBanner';
-import FullPost from '../components/FullPost';
-import Gold from '../img/gold.png';
-import Payroll from '../img/quickbooks-online-payroll-certification.png';
-import CurvySection from '../components/CurvySection';
-import HeroBanner from '../components/HeroBanner';
-import Placeholder from '../img/forest-desktop.jpg';
-import CertifiedProfessionalBookkeeper from '../img/CertifiedProfessionalBookkeeper.jpg';
-import QuickBooksOnlineCertification from '../img/QuickBooksOnlineCertification.jpg';
-import Aan from "../img/aan.png";
+import CtaPanel from '../components/CtaPanel';
 
 //STYLING
 import '../scss/pages/_home.scss';
@@ -21,171 +11,199 @@ import '../scss/pages/_home.scss';
 function Home() {
 	return (
 		<div className='home'>
-			<div className='bg'>
-				<Navbar />
-				<BannerCard
-					index='text'
-					title='Constructive Advice'
-					body='Breathe easier with Quickbooks Online!'
-					body2='Full service accounting and bookkeeping on a 100% digital platform.'
-				></BannerCard>
-				{/* 
-				
-				<div>
-					<h1 className='rate-title'>rate title</h1>
-					<HeroBanner />
-			    </div> */}
-			</div>
+			<Navbar />
 
-			<CurvySection title="Let's go green!" tagline='Paper and pulp is now one of the biggest causes of emissions.'></CurvySection>
-			<div className='inner-container' style={{marginBottom: '3rem'}}>
-				<h1 className='off-white'>What I Do</h1>
-				<p className='off-white m-w65' style={{marginInline: '1rem', marginBottom: '2rem'}}>
-					Quickbooks supplies the software and I supply the training and support.<br></br>Constructive Advice specializes in protecting the environment
-					while providing professional accounting and tax services for businesses and
-					individuals. As a Quickbooks Proadvisor I am dedicated to helping you make your accounting and bookkeeping needs affordable, simpler, quicker, 
-					more accurate and <span style={{borderBottom:'1px dashed beige'}}>paperless</span>, giving you more time to focus on growing your business!<br></br>Let's take the stress out
-					of accounting and help you achieve financial success, the green way!
-				</p> 
-				<a href='http://eepurl.com/ioFNzc' className='btn btn--primary'>Subscribe</a>
-				<p className='off-white m-w65' style={{margin: '1rem', fontStyle: 'italic'}}>
-						"Roz is an incredible human being and accountant- thorough and gets the job
-done in a timely manner. I have full trust in her for all my accounting needs."
-<br></br>-Cory Gallagher
-				</p>
-				<p className='off-white m-w65' style={{margin: '1rem', fontStyle: 'italic'}}>
-										"Knows what she is doing.  Professional and thorough.  10 out of 10, would recommend!!" 
-				<br></br>-Juan Iglesius
-				</p>
-			</div>
-			{/* HERO BANNER FROM BLC??
-			CURVY BANNER */}
-			<DevBanner
-				title='My Mission: Green Accounting and Bookkeeping'
-				tagline='I am committed to the greening of your accounting and bookkeeping records. Quickbooks Online provides the software and I will show you the way.' //The trees are as precious to us as diamonds, pearls, and the petals of a white rose. Quickbooks Online provides the way to paperless bookkeeping and we will donate $25 to Re-Tree NY for each new client.
-				tagline2='Come, Join me for the view!'
-			></DevBanner>
-			
-			<div className='flex1200'>
-				<CardList
-					index='text'
-					title='Services'
-					body="We provide a customized set-up specifically designed to meet your company's needs.  Included is:"
-					body2=''
-					ull='* An interview that defines what version of Quickbooks Online will meet your needs and allow you to grow your business.'
-					ull2='* Meeting with you on your premises for a one day tour of exactly what you do during the day to assist in the customization of your books and records.'
-					ull3='* Subsequent Zoom Conferences throughout set-up'
-					ull4='* Clean-up and consolidation of your current books and records '
-					ull5='* Adding Customers, Vendors and Products and Services to your new file'
-					ull6=''
-					oll=''
-					oll2=''
-				></CardList>
-				{/* * Training sessions- dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:
-				1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.
-				2. Training that reduces the need for volumes of paper  */}
-				<Card
-					index='text'
-					title='Monthly or Quarterly Reviews'
-					body='Reviews ensure that your records are consistently clean and accurate for year-end closing and tax preparation. '
-					body2=''
-				></Card>
-				{/* <Card
-					index='text'
-					title='1031s'
-					body='We do paperless 1031 exchanges!
-				With our expertise in navigating the complexities of tax laws and regulations, we can help you defer taxes and maximize your investment returns.'
-					body2='From identifying potential replacement properties, to ensuring compliance with the IRS guidelines, we’ll handle every step of the process.'
-				></Card> */}
-				<a href='contact'>
-					<Card
-						index='text'
-						title='Project Work - Billed separately'
-						body='I am happy to provide services specifically designed for your company, such as Complex Inventory Systems, Preparation for Bank Loan requests, preparation for Grant Requests for Not-for-Profits, and Preparation for Year-end Taxes.'
-						body2=''
-					></Card>
-				</a>
-			</div>
-			<FullPost
-				url='URL for the post'
-				type=''
-				title='Planting Trees'
-				summary='Constructive Advice will donate 25 dollars to Re-tree NY for every client 
-				signed onto Quickbooks Online!'
-				summary2='Trees are our valuable friends, and
-				planting trees in vacant areas vastly improves quality of life in Western New York. 
-				They clean the air that we breathe, shade our houses from the summer sun, and remove disabling carbon dioxide from the atmosphere. Planting trees has the potential for millions of dollars of benefits in air quality, energy, property value, and removing CO2.'
-				src={Placeholder}
-				alt='green forest'
-			/>
-			
-			<div className='flex1200'>
-		    	<CardList
-					index='text'
-					title='Training Offered'
-					body="Constructive Advice gives training sessions dependent on your needs: either onsite and/or via Zoom shared screens, with a focus on:"
-					body2=''
-					ull=''
-					ull2=''
-					ull3=''
-					ull4=''
-					ull5=''
-					ull6=''
-					oll='1. Training that reduces the time involved in bookkeeping so that you can focus on growing your business, while we focus on planting trees.'
-					oll2='2. Training that reduces the need for volumes of paper. '
-				></CardList>
-				<CardList
-					index='text'
-					title='My Specialties'
-					body="Accounting,
-					Inventory services,
-					Payroll,
-					Personal tax,
-					Book cleanup,
-					Bookkeeping,
-					Business budgeting and forecasting,
-					Self-employed Schedule C tax,
-					Small business tax,
-					Tax preparation,
-					Cost accounting, and
-					Consulting.
-					"
-					body2=''
-					ull='QuickBooks Services:'
-					ull2='*Setup'
-					ull3='*Training'
-					ull4='*Consulting'
-					ull5='*Payroll'
-					ull6='Pricing: We practice Value Pricing'
-					oll=''
-					oll2=''
-				></CardList>
-				<a href='contact'>
-					<Card
-						index='text'
-						title='Get in Touch'
-						body='Click here to contact us today and schedule a consultation.'
-						body2=''
-					></Card>
-				</a>
-				{/* <Card
-					index='text'
-					title='Personal'
-					body='text text text text text text text text'
-					body2='text'
-				></Card> */}
-			</div>
-			<div className='flex1200'>
-				<div style={{display:"flex", alignItems:"center"}}>
-					<img src={Aan} alt='accounting alchemy' style={{maxWidth: '100vw'}}></img>
-					<h3 style={{color:"white"}}>Member</h3>
+			{/* ── Hero ── */}
+			<section className='hero inner-container'>
+				<div className='hero-copy'>
+					<p className='eyebrow hero-eyebrow'>QuickBooks guidance. Human support.</p>
+					<h1 className='hero-title'>
+						Clearer books.{' '}
+						<br />
+						Confident teams.{' '}
+						<br />
+						<span className='hero-accent'>A stronger start.</span>
+					</h1>
+					<p className='hero-sub'>
+						Get QuickBooks Online working for your business—with thoughtful setup, bookkeeping cleanup, and
+						training that makes it click.
+					</p>
+					<div className='hero-actions'>
+						<Link to='/contact' className='btn btn--forest'>
+							Book a 20-minute consultation<span className='btn__arrow' aria-hidden='true'>↗</span>
+						</Link>
+						<a href='#services' className='link-underline'>
+							Explore services
+						</a>
+					</div>
+					<p className='hero-note'>
+						Based in Buffalo, NY <span className='dot' aria-hidden='true'>·</span> Remote support available
+					</p>
 				</div>
-				<img src={Gold} alt='gold rating' style={{maxWidth: '450px'}}></img>
-				<img src={Payroll} alt='qb payroll cert' style={{maxWidth: '100vw'}}></img>
-				<img src={CertifiedProfessionalBookkeeper} width='450' alt='certificate' style={{maxWidth: '450px'}}></img>
-				
-				<img src={QuickBooksOnlineCertification} alt='quickbooks certificate' style={{maxWidth: '100vw'}}></img>
-			</div>
+
+				<div className='hero-art'>
+					<div className='art-card' aria-hidden='true'>
+						<h3 className='art-title'>From overwhelmed to on track.</h3>
+						<ul className='art-list'>
+							<li>
+								<span className='art-check'><FaCheck /></span>QuickBooks set up for the way you work
+							</li>
+							<li>
+								<span className='art-check'><FaCheck /></span>Cleaner records. More useful reports.
+							</li>
+							<li>
+								<span className='art-check'><FaCheck /></span>A team that knows what to do next
+							</li>
+						</ul>
+						<div className='art-progress'>
+							<span></span>
+						</div>
+					</div>
+					<div className='art-float' aria-hidden='true'>
+						<span className='float-arrow'>↗</span>
+						<div>
+							<p className='float-title'>Less paperwork. More possibility.</p>
+							<p className='float-sub'>Practical support. A paperless approach.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ── Feature strip ── */}
+			<section className='feature-strip'>
+				<ul className='inner-container strip-list'>
+					<li>
+						<span className='strip-check'><FaCheck /></span>QuickBooks Online &amp; Advanced
+					</li>
+					<li>
+						<span className='strip-check'><FaCheck /></span>Setup &amp; implementation
+					</li>
+					<li>
+						<span className='strip-check'><FaCheck /></span>Bookkeeping cleanup
+					</li>
+					<li>
+						<span className='strip-check'><FaCheck /></span>Personal, hands-on training
+					</li>
+				</ul>
+			</section>
+
+			{/* ── Services ── */}
+			<section className='services inner-container' id='services'>
+				<div className='services-head'>
+					<div>
+						<p className='eyebrow services-eyebrow'>Support that meets you where you are</p>
+						<h2>What would make work easier?</h2>
+					</div>
+					<p className='services-intro'>
+						Whether you're starting fresh or untangling the details, we'll build a practical plan together.
+					</p>
+				</div>
+				<div className='services-cards'>
+					<article className='service-card'>
+						<p className='service-label'>01 / Get started</p>
+						<h3>Set up for success.</h3>
+						<p className='service-body'>
+							QuickBooks Online setup and Advanced onboarding shaped around your workflows, reporting
+							needs, and team.
+						</p>
+						<Link to='/contact' className='service-link'>
+							Explore setup &amp; onboarding <span aria-hidden='true'>↗</span>
+						</Link>
+					</article>
+					<article className='service-card'>
+						<p className='service-label'>02 / Get organized</p>
+						<h3>Make sense of your books.</h3>
+						<p className='service-body'>
+							Bring order to your records with bookkeeping cleanup and ongoing reviews that help you stay
+							on track.
+						</p>
+						<Link to='/contact' className='service-link'>
+							Explore cleanup &amp; reviews <span aria-hidden='true'>↗</span>
+						</Link>
+					</article>
+					<article className='service-card'>
+						<p className='service-label'>03 / Get confident</p>
+						<h3>Learn it. Use it. Own it.</h3>
+						<p className='service-body'>
+							One-on-one and team training that turns everyday QuickBooks tasks into clear, repeatable
+							habits.
+						</p>
+						<Link to='/contact' className='service-link'>
+							Explore training &amp; support <span aria-hidden='true'>↗</span>
+						</Link>
+					</article>
+				</div>
+			</section>
+
+			{/* ── About Roslyn ── */}
+			<section className='meet-guide'>
+				<div className='inner-container meet-grid'>
+					<div className='guide-tile' aria-hidden='true'>
+						<span className='guide-monogram'>RM</span>
+					</div>
+					<div className='meet-copy'>
+						<p className='eyebrow meet-eyebrow'>Meet your guide · Roslyn Morgante</p>
+						<h2>
+							Experienced guidance.{' '}
+							<br />
+							A real person in your corner.
+						</h2>
+						<p>
+							I bring a background in accounting and finance, hands-on bookkeeping expertise, and current
+							experience onboarding QuickBooks Online Advanced customers as an Implementation Consultant.
+						</p>
+						<p>
+							My goal is simple: help you understand your books, use your tools confidently, and get back
+							to running your business.
+						</p>
+						<Link to='/about' className='link-underline'>
+							Get to know Roslyn <span aria-hidden='true'>↗</span>
+						</Link>
+					</div>
+				</div>
+			</section>
+
+			{/* ── Testimonials ── */}
+			<section className='testimonial inner-container'>
+				<div className='testimonial-label'>
+					<p className='eyebrow test-eyebrow'>Client perspective</p>
+					<span className='stars' aria-hidden='true'>★★★★★</span>
+				</div>
+				<div className='testimonial-quotes'>
+					<div className='testimonial-quote-item'>
+						<blockquote className='testimonial-quote'>
+							&ldquo;I have full trust in her for all my accounting needs.&rdquo;
+						</blockquote>
+						<p className='testimonial-cite'>— Cory Gallagher, Client</p>
+					</div>
+					<div className='testimonial-quote-item'>
+						<blockquote className='testimonial-quote'>
+							&ldquo;Knows what she is doing. Professional and thorough. 10 out of 10, would recommend!&rdquo;
+						</blockquote>
+						<p className='testimonial-cite'>— Juan Iglesius, Client</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ── Green approach ── */}
+			<section className='green-band' id='green-approach'>
+				<div className='inner-container green-grid'>
+					<h2>
+						Better bookkeeping.{' '}
+						<br />
+						Less paper.
+					</h2>
+					<p>
+						I help you build simple digital routines that keep your records easier to find and reduce
+						reliance on paper—so your bookkeeping supports the way you actually work. Practical for you,
+						lighter on the planet.
+					</p>
+				</div>
+			</section>
+
+			{/* ── CTA panel ── */}
+			<CtaPanel />
+
 			<Footer />
 		</div>
 	);

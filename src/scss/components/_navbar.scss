@@ -4,18 +4,56 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// font-family: a.$Poppins;
-	font-size: 1.8rem;
+	gap: 2rem;
 	margin: 0 auto;
-	//background-color: a.$off-white;
-	padding: 2rem 1.6rem;
+	padding: 1.4rem 3.2rem;
+	background-color: a.$cream;
+	border-bottom: 1px solid a.$hairline;
 
-	.logo {
-		align-self: flex-start;
+	// circular "c" badge from the mockup wordmark
+	.nav-brand {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		text-decoration: none;
 	}
 
-	.logo img {
-		height: 8.5rem;
+	.brand-mark {
+		display: grid;
+		place-items: center;
+		width: 5.2rem;
+		height: 5.2rem;
+		border: 2px solid a.$forest;
+		border-radius: 50%;
+		background-color: a.$cream;
+		color: a.$forest;
+		font-family: a.$font-serif;
+		font-style: italic;
+		font-size: 3rem;
+		line-height: 1;
+		padding-bottom: 0.4rem; // optically center the "c"
+		box-sizing: border-box;
+	}
+
+	.brand-text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.brand-name {
+		font-family: a.$font-serif;
+		font-weight: 600;
+		font-size: 2.2rem;
+		color: a.$forest;
+		line-height: 1.2;
+	}
+
+	.brand-tagline {
+		font-family: a.$font-sans;
+		font-size: 1.1rem;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		color: #6d7a6f;
 	}
 
 	.is-active {
@@ -41,7 +79,7 @@
 		border-radius: 0.6rem;
 		transform-origin: 0 0;
 		transition: 0.4s;
-		background-color: a.$off-black;
+		background-color: a.$forest;
 	}
 
 	.hamburger.is-active span:nth-child(1) {
@@ -59,24 +97,39 @@
 
 	.nav-menu {
 		position: fixed;
-		display: block;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 		top: -150%;
 		left: 0;
 		width: 100%;
 		z-index: 2;
 		padding-top: 6rem;
 		transition: 1s;
-		background-color: a.$off-white;
+		background-color: a.$cream;
 	}
 
 	.nav-item a {
-		color: a.$primary;
-		padding: 3rem;
+		color: a.$ink;
+		padding: 2rem 3.2rem;
 		display: block;
+		font-size: 1.8rem;
 	}
 
 	.nav-item a:hover {
-		color: a.$off-black;
+		color: a.$forest-deep;
+	}
+
+	// pill CTA "Let's talk ↗"
+	.nav-item--cta a {
+		width: fit-content;
+		margin: 1rem 3.2rem 2rem;
+		color: a.$cream-soft;
+	}
+
+	.nav-item--cta a:hover {
+		color: a.$cream-soft;
+		background-color: a.$forest-deep;
 	}
 
 	.active {
@@ -85,15 +138,24 @@
 
 	// Desktop Navigation Changes
 	@media only screen and (min-width: 768px) {
-
-		background-color: rgba(255, 255, 255, 0.377);
-
 		.nav-menu {
 			position: relative;
 			padding-top: 0;
-			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 2.4rem;
 			background: none;
 			transition: 0s;
+		}
+
+		.nav-item a {
+			padding: 0.4rem;
+			font-size: 1.6rem;
+		}
+
+		.nav-item--cta a {
+			margin: 0;
+			padding: 0.9rem 1.6rem;
 		}
 
 		.hamburger {
@@ -108,7 +170,7 @@
 
 	@media only screen and (min-width: 2000px) {
 		.nav-item a {
-			padding: 4rem;
+			padding: 0.4rem;
 			font-size: 1.8rem;
 		}
 	}

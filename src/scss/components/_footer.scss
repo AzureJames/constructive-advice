@@ -1,48 +1,107 @@
 @use '../assets' as a;
 
 body footer {
-	background-color: a.$off-white;
-	margin-top: 8rem;
-	padding-inline: .5rem;
+	background-color: a.$cream;
+	border-top: 1px solid a.$hairline;
+	margin-top: 4rem;
 
 	.main-footer {
-		padding-top: 2rem;
-		padding-bottom: 6rem;
-		.footer-two {
-			.logo img {
-				height: 9rem;
+		padding-top: 3rem;
+		padding-bottom: 1.6rem;
+	}
+
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		padding-bottom: 2.4rem;
+		border-bottom: 1px solid a.$hairline;
+	}
+
+	.footer-brand {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		// circular "c" badge, matching the navbar
+		.brand-mark {
+			display: grid;
+			place-items: center;
+			width: 3.4rem;
+			height: 3.4rem;
+			border: 2px solid a.$forest;
+			border-radius: 50%;
+			color: a.$forest;
+			font-family: a.$font-serif;
+			font-style: italic;
+			font-size: 2rem;
+			line-height: 1;
+			padding-bottom: 0.2rem;
+			box-sizing: border-box;
+		}
+
+		.brand-name {
+			font-family: a.$font-serif;
+			font-weight: 600;
+			font-size: 2rem;
+			color: a.$forest;
+		}
+	}
+
+	.footer-meta {
+		font-size: 1.6rem;
+		color: a.$ink;
+
+		a {
+			color: a.$ink;
+			font-size: 1.6rem;
+			text-decoration: none;
+
+			&:hover {
+				color: a.$forest;
+				text-decoration: underline;
 			}
 		}
 	}
 
-	.inner-container {
-		max-width: 140rem;
+	.footer-dot {
+		margin-inline: 0.8rem;
+		color: a.$moss;
 	}
 
-	.secondary-footer {
-		width: 100%;
+	.footer-bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+		padding-top: 1.6rem;
+
+		p {
+			font-size: 1.4rem;
+			color: #6d7a6f;
+			margin: 0;
+
+			a {
+				color: inherit;
+				font-size: inherit;
+			}
+		}
 	}
 
 	@media only screen and (min-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-
 		.main-footer {
 			width: 100%;
-			display: flex;
-			justify-content: space-between;
-
-			.footer-one {
-				text-align: left;
-			}
-
-			.footer-two {
-				text-align: right;
-			}
 		}
 
-		.secondary-footer {
-			width: 100%;
+		.footer-top {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.footer-bottom {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
 		}
 	}
 }

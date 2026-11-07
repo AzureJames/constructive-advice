@@ -1,20 +1,69 @@
 @use '../assets' as a;
 
 .contact {
-	background-color: a.$primary;
+	background-color: a.$cream;
+	color: a.$ink;
+	min-height: 100vh;
+}
 
-	.inner-container {
-		padding: 8rem 1.6rem;
+.contact .inner-container {
+	padding-inline: 2.4rem;
+}
+
+// ── Intro ──
+.contact-hero {
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+
+	h1 {
+		font-size: clamp(3.6rem, 5vw, 5.6rem);
+		margin: 1.6rem 0 2.4rem;
 	}
 }
 
-.contact input,
-.contact textarea {
-	border-radius: 8px;
-	padding: 5px;
-	font-family: 'Poppins', sans-serif;
+.contact-eyebrow {
+	color: a.$forest;
+	margin: 0;
 }
 
-.contact textarea {
-	min-height: 29rem;
+.contact-lede {
+	max-width: 52rem;
+	font-size: 1.8rem;
+	color: #464c45;
+	margin: 0 0 2.4rem;
+}
+
+.contact-meta {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+
+	li {
+		font-size: 1.6rem;
+	}
+
+	a {
+		color: a.$forest;
+		font-weight: 600;
+		font-size: 1.6rem;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+			text-underline-offset: 0.5rem;
+		}
+	}
+
+	.dot {
+		margin-inline: 0.6rem;
+		color: a.$moss;
+	}
+}
+
+// ── Form panel ──
+.contact-panel-wrap {
+	padding-bottom: 8rem;
 }

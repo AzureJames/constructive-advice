@@ -5,6 +5,14 @@ import emailjs from '@emailjs/browser';
 import '../scss/components/_form.scss';
 import '../scss/components/_button.scss';
 
+// Offers from the homepage, per the marketing plan
+const SERVICE_OPTIONS = [
+	'Setup & onboarding',
+	'Bookkeeping cleanup & reviews',
+	'Training & support',
+	'Not sure yet — help me decide',
+];
+
 // A custom validation function. This must return an object which keys are symmetrical to our values/initialValues
 const validate = (values) => {
 	const errors = {};
@@ -14,12 +22,8 @@ const validate = (values) => {
 
 	if (!values.email.trim()) {
 		errors.email = 'Email required';
-	} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+	} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
 		errors.email = 'Invalid email address';
-	}
-
-	if (!values.message.trim()) {
-		errors.message = 'Message required';
 	}
 
 	return errors;
@@ -36,15 +40,12 @@ const ContactForm = () => {
 		initialValues: {
 			name: '',
 			email: '',
+			service: '',
 			message: '',
 		},
 		validate,
-		onSubmit: (values, resetForm) => {
-			
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('BPcmC3BMlMhM_0Fck');
-        
-    
+		onSubmit: (values) => {
+			// https://dashboard.emailjs.com/admin/account
 			emailjs
 				.send(
 					process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -52,7 +53,7 @@ const ContactForm = () => {
 					values,
 					process.env.REACT_APP_EMAILJS_USER_ID
 				)
-				.then((resp) => {
+				.then(() => {
 					// it worked
 					formik.resetForm();
 					setSuccess(true);
@@ -64,16 +65,15 @@ const ContactForm = () => {
 	});
 
 	return (
-		<div>
-			<form className='contact-form inner-container' onSubmit={formik.handleSubmit}>
-				<div className='name'>
-					<label className='nameLabel' for='name'>
-						First & Last Name
-					</label>
+		<form className='contact-form' onSubmit={formik.handleSubmit}>
+			<div className='form-row'>
+				<div className='field'>
+					<label htmlFor='name'>First &amp; last name *</label>
 					<input
 						type='text'
 						id='name'
 						name='name'
+						required
 						onChange={formik.handleChange}
 						onBlur={formik.handleBlur}
 						value={formik.values.name}
@@ -82,12 +82,13 @@ const ContactForm = () => {
 						<div className='errors'>{formik.errors.name}</div>
 					) : null}
 				</div>
-				<div className='email'>
-					<label for='email'>Email</label>
+				<div className='field'>
+					<label htmlFor='email'>Email *</label>
 					<input
-						type='text'
+						type='email'
 						id='email'
 						name='email'
+						required
 						onChange={formik.handleChange}
 						onBlur={formik.handleBlur}
 						value={formik.values.email}
@@ -97,31 +98,58 @@ const ContactForm = () => {
 						<div className='errors'>{formik.errors.email}</div>
 					) : null}
 				</div>
-				<div className='message'>
-					<label for='message'>Message</label>
-					<textarea
-						name='message'
-						id='message'
-						onChange={formik.handleChange}
-						onBlur={formik.handleBlur}
-						value={formik.values.message}
-					/>
-					{formik.touched.message && formik.errors.message ? (
-						<div className='errors'>{formik.errors.message}</div>
-					) : null}
-				</div>
-				<div className='btn-container'>
-					<input className='btn btn--primary' type='submit' value='Send Message' name='contact' />
-				</div>
-				<div className='inner-container'>
-					<p className='success off-white'>
-						{success === true
-							? "Thanks for reaching out! I'll be in touch shortly."
-							: ''}
-					</p>
-				</div>
-			</form>
-		</div>
+			</div>
+
+			<div className='field'>
+				<label htmlFor='service'>I'm interested in</label>
+				<select
+					id='service'
+					name='service'
+					onChange={formik.handleChange}
+					onBlur={formik.handleBlur}
+					value={formik.values.service}
+				>
+					<option value=''>Choose a service (optional)</option>
+					{SERVICE_OPTIONS.map((option) => (
+						<option key={option} value={option}>
+							{option}
+						</option>
+					))}
+				</select>
+			</div>
+
+			<div className='field'>
+				<label htmlFor='message'>Tell me about your books</label>
+				<textarea
+					name='message'
+					id='message'
+					placeholder="What's going on with your QuickBooks, and what would you like to improve?"
+					onChange={formik.handleChange}
+					onBlur={formik.handleBlur}
+					value={formik.values.message}
+				/>
+			</div>
+
+			<div className='btn-container'>
+				<input
+					className='btn btn--forest'
+					type='submit'
+					value='Book a 20-minute consultation ↗'
+					name='contact'
+				/>
+			</div>
+			<p className='contact-note smltxt'>
+				Prefer email or a call? Reach me at ConstructiveAdvice1@gmail.com or 716-880-6069.
+				I reply within one business day.
+			</p>
+			<div aria-live='polite'>
+				<p className='success'>
+					{success === true
+						? "Thanks for reaching out! I'll reply within one business day to book your consultation."
+						: ''}
+				</p>
+			</div>
+		</form>
 	);
 };
 

@@ -9,17 +9,28 @@
 
 // $Archivo: 'Archivo Black', sans-serif;
 // $Julius: 'Julius Sans One', sans-serif;
+
+@use './colors' as c;
+
+// ── Mockup typography (website redesign tokens) ──
+// $font-serif: editorial display headings (mockup headline, cards, wordmark)
+// $font-sans: body + UI text
+$font-serif: 'Lora', 'Georgia', serif;
+$font-sans: 'Poppins', 'Segoe UI', sans-serif;
+
 .smltxt {
 	font-size: 14px;
 }
 
 body h1,
-body h2 {
-	font-family: 'Raleway';
+body h2,
+body h3 {
+	font-family: $font-serif;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 75px;
+	font-weight: 600;
+	line-height: 1.15;
 	text-align: left;
+	letter-spacing: -0.01em;
 }
 body h1 {
 	font-size: 64px;
@@ -32,12 +43,35 @@ body p,
 body label,
 body input,
 body a,
-body h3,
 body li {
-	font-family: 'Poppins';
+	font-family: $font-sans;
 	font-size: 18px;
 	line-height: 1.6;
 	text-align: left;
+}
+
+// small, uppercase, letter-spaced section label (mockup "QUICKBOOKS GUIDANCE. HUMAN SUPPORT.")
+.eyebrow {
+	font-family: $font-sans;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+// underlined text link (mockup "Explore services", "Get to know Roslyn ↗")
+.link-underline {
+	color: c.$forest;
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-color: c.$hairline;
+	text-underline-offset: 0.6rem;
+	text-decoration-thickness: 1px;
+
+	&:hover {
+		color: c.$forest-deep;
+		text-decoration-color: c.$forest;
+	}
 }
 
 body li:hover {
