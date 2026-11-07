@@ -31,6 +31,7 @@ const validate = (values) => {
 
 const ContactForm = () => {
 	const [success, setSuccess] = useState(false);
+	const [failed, setFailed] = useState(false);
 
 	// Pass the useFormik() hook initial form values, a validate function that will be called when
 	// form values change or fields are blurred, and a submit function that will
@@ -60,6 +61,7 @@ const ContactForm = () => {
 				})
 				.catch((err) => {
 					console.log(err.message);
+					setFailed(true);
 				});
 		},
 	});
@@ -146,6 +148,11 @@ const ContactForm = () => {
 				<p className='success'>
 					{success === true
 						? "Thanks for reaching out! I'll reply within one business day to book your consultation."
+						: ''}
+				</p>
+				<p className='failure'>
+					{failed === true
+						? "Sorry — something went wrong sending your message. Please email me directly at ConstructiveAdvice1@gmail.com and I'll get back to you quickly."
 						: ''}
 				</p>
 			</div>
