@@ -20,9 +20,10 @@ body .btn-container {
 	color: a.$off-black;
 }
 
-// dark green pill CTA (mockup: "Let's talk ↗")
+// pine green pill CTA — brighter than $forest so it never reads gray,
+// and its hover stays clearly green (survey: "grayed out")
 .btn--forest {
-	background-color: a.$forest;
+	background-color: #2b5c42;
 	color: a.$cream-soft;
 	border-radius: 6px;
 	font-weight: 500;
@@ -34,7 +35,8 @@ body .btn-container {
 }
 
 .btn--forest:hover {
-	background-color: a.$forest-deep;
+	background-color: #235238;
+	color: a.$cream-soft;
 }
 
 .btn__arrow {
