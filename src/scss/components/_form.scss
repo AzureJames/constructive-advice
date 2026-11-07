@@ -82,7 +82,12 @@
 
 	input[type='submit'] {
 		width: auto;
+		background-color: #2b5c42; // same pine green as .btn--forest — .btn--forest alone loses background to the .contact-form input rule above
 		color: a.$cream-soft;
+
+		&:hover {
+			background-color: #235238;
+		}
 	}
 
 	.contact-note {
