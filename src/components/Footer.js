@@ -25,7 +25,9 @@ const Footer = () => {
 				<div className='footer-bottom'>
 					<p className='smltxt'>Thoughtful accounting. Lighter footprints. A practical, paperless approach.</p>
 					<p className='smltxt'>
-						QuickBooks is a registered trademark of Intuit Inc. <span aria-hidden='true'>|</span> Web design by{' '}
+						QuickBooks is a registered trademark of Intuit Inc.
+						<br />
+						Web design by{' '}
 						<a href='https://azurejames.com/portfolio/'>Azure James</a>
 					</p>
 				</div>
