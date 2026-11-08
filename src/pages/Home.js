@@ -87,6 +87,30 @@ function Home() {
 				</ul>
 			</section>
 
+			{/* ── Testimonials ── */}
+			<section className='testimonial inner-container'>
+				<div className='testimonial-label'>
+					<p className='eyebrow test-eyebrow'>Client perspective</p>
+					<span className='stars' aria-hidden='true'>★★★★★</span>
+				</div>
+				<div className='testimonial-quotes'>
+					<div className='testimonial-quote-item'>
+						<span className='stars' aria-hidden='true'>★★★★★</span>
+						<blockquote className='testimonial-quote'>
+							&ldquo;I have full trust in her for all my accounting needs.&rdquo;
+						</blockquote>
+						<p className='testimonial-cite'>— Cory Gallagher, Client</p>
+					</div>
+					<div className='testimonial-quote-item'>
+						<span className='stars' aria-hidden='true'>★★★★★</span>
+						<blockquote className='testimonial-quote'>
+							&ldquo;Knows what she is doing. Professional and thorough. 10 out of 10, would recommend!&rdquo;
+						</blockquote>
+						<p className='testimonial-cite'>— Juan Iglesius, Client</p>
+					</div>
+				</div>
+			</section>
+
 			{/* ── Services ── */}
 			<section className='services inner-container' id='services'>
 				<div className='services-head'>
@@ -100,7 +124,7 @@ function Home() {
 				</div>
 				<div className='services-cards'>
 					<article className='service-card'>
-						<p className='service-label'>01 / Get started</p>
+						<p className='service-label'><span className='service-bullet' aria-hidden='true'><FaCheck /></span>Get started</p>
 						<h3>Set up for success.</h3>
 						<p className='service-body'>
 							QuickBooks Online setup and Advanced onboarding shaped around your workflows, reporting
@@ -111,7 +135,7 @@ function Home() {
 						</Link>
 					</article>
 					<article className='service-card'>
-						<p className='service-label'>02 / Get organized</p>
+						<p className='service-label'><span className='service-bullet' aria-hidden='true'><FaCheck /></span>Get organized</p>
 						<h3>Make sense of your books.</h3>
 						<p className='service-body'>
 							Bring order to your records with bookkeeping cleanup and ongoing reviews that help you stay
@@ -122,7 +146,7 @@ function Home() {
 						</Link>
 					</article>
 					<article className='service-card'>
-						<p className='service-label'>03 / Get confident</p>
+						<p className='service-label'><span className='service-bullet' aria-hidden='true'><FaCheck /></span>Get confident</p>
 						<h3>Learn it. Use it. Own it.</h3>
 						<p className='service-body'>
 							One-on-one and team training that turns everyday QuickBooks tasks into clear, repeatable
@@ -159,28 +183,6 @@ function Home() {
 						<Link to='/about' className='link-underline'>
 							Get to know Roslyn <span aria-hidden='true'>↗</span>
 						</Link>
-					</div>
-				</div>
-			</section>
-
-			{/* ── Testimonials ── */}
-			<section className='testimonial inner-container'>
-				<div className='testimonial-label'>
-					<p className='eyebrow test-eyebrow'>Client perspective</p>
-					<span className='stars' aria-hidden='true'>★★★★★</span>
-				</div>
-				<div className='testimonial-quotes'>
-					<div className='testimonial-quote-item'>
-						<blockquote className='testimonial-quote'>
-							&ldquo;I have full trust in her for all my accounting needs.&rdquo;
-						</blockquote>
-						<p className='testimonial-cite'>— Cory Gallagher, Client</p>
-					</div>
-					<div className='testimonial-quote-item'>
-						<blockquote className='testimonial-quote'>
-							&ldquo;Knows what she is doing. Professional and thorough. 10 out of 10, would recommend!&rdquo;
-						</blockquote>
-						<p className='testimonial-cite'>— Juan Iglesius, Client</p>
 					</div>
 				</div>
 			</section>
