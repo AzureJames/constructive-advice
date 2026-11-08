@@ -38,7 +38,7 @@ function About() {
 				<p className='about-body'>
 					Since August 2024, my work with Intuit has included bookkeeping support; I now serve as an
 					Implementation Consultant onboarding QuickBooks Online Advanced customers. I bring that practical,
-					hands-on experience to helping business owners build more organized accounting workflows—and to
+					hands-on experience to helping business owners build more organized accounting workflows, and to
 					making sure the software works the way you do.
 				</p>
 				<p className='about-body'>
@@ -79,7 +79,7 @@ function About() {
 						</p>
 						<ul className='values-list'>
 							<li>Simple digital routines instead of paper files</li>
-							<li>Reports you understand—and know how to ask about</li>
+							<li>Reports you understand, and know how to ask about</li>
 							<li>Hands-on training so your team stays confident</li>
 						</ul>
 					</div>

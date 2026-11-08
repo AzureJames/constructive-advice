@@ -25,7 +25,7 @@ function Home() {
 						<span className='hero-accent'>A stronger start.</span>
 					</h1>
 					<p className='hero-sub'>
-						Get QuickBooks Online working for your business—with thoughtful setup, bookkeeping cleanup, and
+						Get QuickBooks Online working for your business, with thoughtful setup, bookkeeping cleanup, and
 						training that makes it click.
 					</p>
 					<div className='hero-actions'>
@@ -90,8 +90,7 @@ function Home() {
 			{/* ── Testimonials ── */}
 			<section className='testimonial inner-container'>
 				<div className='testimonial-label'>
-					<p className='eyebrow test-eyebrow'>Client perspective</p>
-					<span className='stars' aria-hidden='true'>★★★★★</span>
+					<p className='eyebrow test-eyebrow'>Client perspectives</p>
 				</div>
 				<div className='testimonial-quotes'>
 					<div className='testimonial-quote-item'>
@@ -110,6 +109,11 @@ function Home() {
 					</div>
 				</div>
 			</section>
+
+			{/* ── Divider ── */}
+			<div className='inner-container'>
+				<hr className='section-divider' />
+			</div>
 
 			{/* ── Services ── */}
 			<section className='services inner-container' id='services'>
@@ -197,7 +201,7 @@ function Home() {
 					</h2>
 					<p>
 						I help you build simple digital routines that keep your records easier to find and reduce
-						reliance on paper—so your bookkeeping supports the way you actually work. Practical for you,
+						reliance on paper, so your bookkeeping supports the way you actually work. Practical for you,
 						lighter on the planet.
 					</p>
 				</div>

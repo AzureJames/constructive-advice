@@ -10,7 +10,7 @@ const SERVICE_OPTIONS = [
 	'Setup & onboarding',
 	'Bookkeeping cleanup & reviews',
 	'Training & support',
-	'Not sure yet — help me decide',
+	'Not sure yet, help me decide',
 ];
 
 // A custom validation function. This must return an object which keys are symmetrical to our values/initialValues
@@ -152,7 +152,7 @@ const ContactForm = () => {
 				</p>
 				<p className='failure'>
 					{failed === true
-						? "Sorry — something went wrong sending your message. Please email me directly at ConstructiveAdvice1@gmail.com and I'll get back to you quickly."
+						? "Sorry, something went wrong sending your message. Please email me directly at ConstructiveAdvice1@gmail.com and I'll get back to you quickly."
 						: ''}
 				</p>
 			</div>
