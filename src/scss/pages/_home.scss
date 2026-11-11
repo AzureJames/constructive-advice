@@ -195,7 +195,7 @@
 	.strip-list {
 		list-style: none;
 		margin: 0 auto;
-		padding: 0;
+		padding-inline: 2.4rem; // side padding so the items align with page content on all screens (padding: 0 here was overriding .home .inner-container)
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2rem 4rem;
@@ -557,6 +557,7 @@
 
 	.feature-strip .strip-list {
 		flex-direction: column;
+		align-items: flex-start;
 		gap: 1.4rem;
 	}
 }
