@@ -20,13 +20,16 @@ function Contact() {
 					</p>
 					<ul className='contact-meta'>
 						<li>
-							<a href='tel:7168806069'>716-880-6069 (Weekday hours: 10AM-11AM)</a>
+							<a href='tel:7168806069'>716-880-6069</a>
 						</li>
 						<li>
 							<a href='mailto:ConstructiveAdvice1@gmail.com'>ConstructiveAdvice1@gmail.com</a>
 						</li>
 						<li>
 							Buffalo, NY <span className='dot' aria-hidden='true'>·</span> Remote support available
+						</li>
+						<li>
+							Weekday hours: 10AM–5PM
 						</li>
 					</ul>
 				</div>
