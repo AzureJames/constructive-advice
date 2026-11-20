@@ -18,7 +18,7 @@ const CtaPanel = () => {
 					</p>
 				</div>
 				<Link to='/contact' className='btn btn--cream'>
-					Book a 20-minute consultation<span className='btn__arrow' aria-hidden='true'>↗</span>
+					Book a 30-minute consultation<span className='btn__arrow' aria-hidden='true'>↗</span>
 				</Link>
 			</div>
 		</div>

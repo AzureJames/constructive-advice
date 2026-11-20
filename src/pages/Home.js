@@ -30,7 +30,7 @@ function Home() {
 					</p>
 					<div className='hero-actions'>
 						<Link to='/contact' className='btn btn--forest'>
-							Book a 20-minute consultation<span className='btn__arrow' aria-hidden='true'>↗</span>
+							Book a 30-minute consultation<span className='btn__arrow' aria-hidden='true'>↗</span>
 						</Link>
 						<a href='#services' className='link-underline'>
 							Explore services

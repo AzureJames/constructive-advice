@@ -136,7 +136,7 @@ const ContactForm = () => {
 				<input
 					className='btn btn--forest'
 					type='submit'
-					value='Book a 20-minute consultation ↗'
+					value='Book a 30-minute consultation ↗'
 					name='contact'
 				/>
 			</div>
